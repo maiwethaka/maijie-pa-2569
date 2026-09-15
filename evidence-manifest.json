@@ -1,0 +1,1436 @@
+[
+  {
+    "area": 1,
+    "page": 4,
+    "sequence": 1,
+    "sourceObject": 55,
+    "file": "img/pa-evidence/area-1-p04-001.webp",
+    "width": 1542,
+    "height": 867,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 2,
+    "sourceObject": 59,
+    "file": "img/pa-evidence/area-1-p05-002.webp",
+    "width": 759,
+    "height": 570,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 3,
+    "sourceObject": 60,
+    "file": "img/pa-evidence/area-1-p05-003.webp",
+    "width": 754,
+    "height": 566,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 4,
+    "sourceObject": 61,
+    "file": "img/pa-evidence/area-1-p05-004.webp",
+    "width": 755,
+    "height": 566,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 5,
+    "sourceObject": 62,
+    "file": "img/pa-evidence/area-1-p05-005.webp",
+    "width": 760,
+    "height": 571,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 6,
+    "sourceObject": 63,
+    "file": "img/pa-evidence/area-1-p05-006.webp",
+    "width": 760,
+    "height": 571,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 7,
+    "sourceObject": 64,
+    "file": "img/pa-evidence/area-1-p05-007.webp",
+    "width": 757,
+    "height": 568,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 5,
+    "sequence": 8,
+    "sourceObject": 65,
+    "file": "img/pa-evidence/area-1-p05-008.webp",
+    "width": 1536,
+    "height": 1024,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 6,
+    "sequence": 9,
+    "sourceObject": 70,
+    "file": "img/pa-evidence/area-1-p06-009.webp",
+    "width": 764,
+    "height": 573,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 6,
+    "sequence": 10,
+    "sourceObject": 71,
+    "file": "img/pa-evidence/area-1-p06-010.webp",
+    "width": 764,
+    "height": 573,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 6,
+    "sequence": 11,
+    "sourceObject": 72,
+    "file": "img/pa-evidence/area-1-p06-011.webp",
+    "width": 760,
+    "height": 571,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 6,
+    "sequence": 12,
+    "sourceObject": 73,
+    "file": "img/pa-evidence/area-1-p06-012.webp",
+    "width": 756,
+    "height": 567,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 6,
+    "sequence": 13,
+    "sourceObject": 74,
+    "file": "img/pa-evidence/area-1-p06-013.webp",
+    "width": 1607,
+    "height": 1204,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 14,
+    "sourceObject": 78,
+    "file": "img/pa-evidence/area-1-p07-014.webp",
+    "width": 765,
+    "height": 574,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 15,
+    "sourceObject": 79,
+    "file": "img/pa-evidence/area-1-p07-015.webp",
+    "width": 765,
+    "height": 574,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 16,
+    "sourceObject": 80,
+    "file": "img/pa-evidence/area-1-p07-016.webp",
+    "width": 748,
+    "height": 562,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 17,
+    "sourceObject": 81,
+    "file": "img/pa-evidence/area-1-p07-017.webp",
+    "width": 756,
+    "height": 567,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 18,
+    "sourceObject": 82,
+    "file": "img/pa-evidence/area-1-p07-018.webp",
+    "width": 748,
+    "height": 562,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 19,
+    "sourceObject": 83,
+    "file": "img/pa-evidence/area-1-p07-019.webp",
+    "width": 756,
+    "height": 567,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 20,
+    "sourceObject": 84,
+    "file": "img/pa-evidence/area-1-p07-020.webp",
+    "width": 770,
+    "height": 578,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 7,
+    "sequence": 21,
+    "sourceObject": 85,
+    "file": "img/pa-evidence/area-1-p07-021.webp",
+    "width": 789,
+    "height": 591,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 8,
+    "sequence": 22,
+    "sourceObject": 89,
+    "file": "img/pa-evidence/area-1-p08-022.webp",
+    "width": 750,
+    "height": 563,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 8,
+    "sequence": 23,
+    "sourceObject": 90,
+    "file": "img/pa-evidence/area-1-p08-023.webp",
+    "width": 760,
+    "height": 571,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 8,
+    "sequence": 24,
+    "sourceObject": 91,
+    "file": "img/pa-evidence/area-1-p08-024.webp",
+    "width": 759,
+    "height": 570,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 8,
+    "sequence": 25,
+    "sourceObject": 92,
+    "file": "img/pa-evidence/area-1-p08-025.webp",
+    "width": 752,
+    "height": 564,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 8,
+    "sequence": 26,
+    "sourceObject": 93,
+    "file": "img/pa-evidence/area-1-p08-026.webp",
+    "width": 1477,
+    "height": 1108,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 8,
+    "sequence": 27,
+    "sourceObject": 94,
+    "file": "img/pa-evidence/area-1-p08-027.webp",
+    "width": 1024,
+    "height": 1536,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 28,
+    "sourceObject": 100,
+    "file": "img/pa-evidence/area-1-p09-028.webp",
+    "width": 704,
+    "height": 528,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 29,
+    "sourceObject": 101,
+    "file": "img/pa-evidence/area-1-p09-029.webp",
+    "width": 710,
+    "height": 532,
+    "pdfRotation": 180
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 30,
+    "sourceObject": 102,
+    "file": "img/pa-evidence/area-1-p09-030.webp",
+    "width": 676,
+    "height": 507,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 31,
+    "sourceObject": 103,
+    "file": "img/pa-evidence/area-1-p09-031.webp",
+    "width": 711,
+    "height": 533,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 32,
+    "sourceObject": 104,
+    "file": "img/pa-evidence/area-1-p09-032.webp",
+    "width": 958,
+    "height": 529,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 33,
+    "sourceObject": 105,
+    "file": "img/pa-evidence/area-1-p09-033.webp",
+    "width": 971,
+    "height": 533,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 34,
+    "sourceObject": 106,
+    "file": "img/pa-evidence/area-1-p09-034.webp",
+    "width": 958,
+    "height": 533,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 9,
+    "sequence": 35,
+    "sourceObject": 107,
+    "file": "img/pa-evidence/area-1-p09-035.webp",
+    "width": 916,
+    "height": 507,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 10,
+    "sequence": 36,
+    "sourceObject": 111,
+    "file": "img/pa-evidence/area-1-p10-036.webp",
+    "width": 795,
+    "height": 596,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 10,
+    "sequence": 37,
+    "sourceObject": 112,
+    "file": "img/pa-evidence/area-1-p10-037.webp",
+    "width": 795,
+    "height": 596,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 10,
+    "sequence": 38,
+    "sourceObject": 113,
+    "file": "img/pa-evidence/area-1-p10-038.webp",
+    "width": 796,
+    "height": 597,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 10,
+    "sequence": 39,
+    "sourceObject": 114,
+    "file": "img/pa-evidence/area-1-p10-039.webp",
+    "width": 775,
+    "height": 581,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 10,
+    "sequence": 40,
+    "sourceObject": 115,
+    "file": "img/pa-evidence/area-1-p10-040.webp",
+    "width": 1320,
+    "height": 724,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 41,
+    "sourceObject": 121,
+    "file": "img/pa-evidence/area-1-p11-041.webp",
+    "width": 768,
+    "height": 576,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 42,
+    "sourceObject": 122,
+    "file": "img/pa-evidence/area-1-p11-042.webp",
+    "width": 840,
+    "height": 630,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 43,
+    "sourceObject": 123,
+    "file": "img/pa-evidence/area-1-p11-043.webp",
+    "width": 862,
+    "height": 647,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 44,
+    "sourceObject": 124,
+    "file": "img/pa-evidence/area-1-p11-044.webp",
+    "width": 863,
+    "height": 647,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 45,
+    "sourceObject": 125,
+    "file": "img/pa-evidence/area-1-p11-045.webp",
+    "width": 784,
+    "height": 450,
+    "pdfRotation": -90
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 46,
+    "sourceObject": 126,
+    "file": "img/pa-evidence/area-1-p11-046.webp",
+    "width": 991,
+    "height": 547,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 47,
+    "sourceObject": 127,
+    "file": "img/pa-evidence/area-1-p11-047.webp",
+    "width": 801,
+    "height": 454,
+    "pdfRotation": 90
+  },
+  {
+    "area": 1,
+    "page": 11,
+    "sequence": 48,
+    "sourceObject": 128,
+    "file": "img/pa-evidence/area-1-p11-048.webp",
+    "width": 869,
+    "height": 579,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 49,
+    "sourceObject": 133,
+    "file": "img/pa-evidence/area-1-p12-049.webp",
+    "width": 787,
+    "height": 591,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 50,
+    "sourceObject": 134,
+    "file": "img/pa-evidence/area-1-p12-050.webp",
+    "width": 789,
+    "height": 592,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 51,
+    "sourceObject": 135,
+    "file": "img/pa-evidence/area-1-p12-051.webp",
+    "width": 788,
+    "height": 591,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 52,
+    "sourceObject": 136,
+    "file": "img/pa-evidence/area-1-p12-052.webp",
+    "width": 773,
+    "height": 580,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 53,
+    "sourceObject": 137,
+    "file": "img/pa-evidence/area-1-p12-053.webp",
+    "width": 789,
+    "height": 592,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 54,
+    "sourceObject": 138,
+    "file": "img/pa-evidence/area-1-p12-054.webp",
+    "width": 994,
+    "height": 746,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 55,
+    "sourceObject": 139,
+    "file": "img/pa-evidence/area-1-p12-055.webp",
+    "width": 853,
+    "height": 639,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 12,
+    "sequence": 56,
+    "sourceObject": 140,
+    "file": "img/pa-evidence/area-1-p12-056.webp",
+    "width": 741,
+    "height": 686,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 57,
+    "sourceObject": 145,
+    "file": "img/pa-evidence/area-1-p13-057.webp",
+    "width": 1000,
+    "height": 1000,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 58,
+    "sourceObject": 146,
+    "file": "img/pa-evidence/area-1-p13-058.webp",
+    "width": 1000,
+    "height": 1000,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 59,
+    "sourceObject": 147,
+    "file": "img/pa-evidence/area-1-p13-059.webp",
+    "width": 421,
+    "height": 419,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 60,
+    "sourceObject": 148,
+    "file": "img/pa-evidence/area-1-p13-060.webp",
+    "width": 850,
+    "height": 637,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 61,
+    "sourceObject": 149,
+    "file": "img/pa-evidence/area-1-p13-061.webp",
+    "width": 677,
+    "height": 507,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 62,
+    "sourceObject": 150,
+    "file": "img/pa-evidence/area-1-p13-062.webp",
+    "width": 825,
+    "height": 619,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 63,
+    "sourceObject": 151,
+    "file": "img/pa-evidence/area-1-p13-063.webp",
+    "width": 864,
+    "height": 1221,
+    "pdfRotation": 0
+  },
+  {
+    "area": 1,
+    "page": 13,
+    "sequence": 64,
+    "sourceObject": 152,
+    "file": "img/pa-evidence/area-1-p13-064.webp",
+    "width": 718,
+    "height": 475,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 14,
+    "sequence": 1,
+    "sourceObject": 160,
+    "file": "img/pa-evidence/area-2-p14-001.webp",
+    "width": 451,
+    "height": 638,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 14,
+    "sequence": 2,
+    "sourceObject": 161,
+    "file": "img/pa-evidence/area-2-p14-002.webp",
+    "width": 451,
+    "height": 639,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 14,
+    "sequence": 3,
+    "sourceObject": 162,
+    "file": "img/pa-evidence/area-2-p14-003.webp",
+    "width": 452,
+    "height": 640,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 14,
+    "sequence": 4,
+    "sourceObject": 163,
+    "file": "img/pa-evidence/area-2-p14-004.webp",
+    "width": 462,
+    "height": 653,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 14,
+    "sequence": 5,
+    "sourceObject": 164,
+    "file": "img/pa-evidence/area-2-p14-005.webp",
+    "width": 380,
+    "height": 537,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 14,
+    "sequence": 6,
+    "sourceObject": 165,
+    "file": "img/pa-evidence/area-2-p14-006.webp",
+    "width": 329,
+    "height": 466,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 7,
+    "sourceObject": 169,
+    "file": "img/pa-evidence/area-2-p15-007.webp",
+    "width": 1000,
+    "height": 1000,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 8,
+    "sourceObject": 170,
+    "file": "img/pa-evidence/area-2-p15-008.webp",
+    "width": 455,
+    "height": 643,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 9,
+    "sourceObject": 171,
+    "file": "img/pa-evidence/area-2-p15-009.webp",
+    "width": 456,
+    "height": 645,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 10,
+    "sourceObject": 172,
+    "file": "img/pa-evidence/area-2-p15-010.webp",
+    "width": 1077,
+    "height": 606,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 11,
+    "sourceObject": 173,
+    "file": "img/pa-evidence/area-2-p15-011.webp",
+    "width": 486,
+    "height": 486,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 12,
+    "sourceObject": 174,
+    "file": "img/pa-evidence/area-2-p15-012.webp",
+    "width": 530,
+    "height": 530,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 15,
+    "sequence": 13,
+    "sourceObject": 175,
+    "file": "img/pa-evidence/area-2-p15-013.webp",
+    "width": 1820,
+    "height": 1108,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 16,
+    "sequence": 14,
+    "sourceObject": 182,
+    "file": "img/pa-evidence/area-2-p16-014.webp",
+    "width": 1035,
+    "height": 582,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 16,
+    "sequence": 15,
+    "sourceObject": 183,
+    "file": "img/pa-evidence/area-2-p16-015.webp",
+    "width": 829,
+    "height": 622,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 16,
+    "sequence": 16,
+    "sourceObject": 184,
+    "file": "img/pa-evidence/area-2-p16-016.webp",
+    "width": 738,
+    "height": 553,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 16,
+    "sequence": 17,
+    "sourceObject": 185,
+    "file": "img/pa-evidence/area-2-p16-017.webp",
+    "width": 842,
+    "height": 631,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 16,
+    "sequence": 18,
+    "sourceObject": 188,
+    "file": "img/pa-evidence/area-2-p16-018.webp",
+    "width": 643,
+    "height": 910,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 16,
+    "sequence": 19,
+    "sourceObject": 189,
+    "file": "img/pa-evidence/area-2-p16-019.webp",
+    "width": 637,
+    "height": 901,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 17,
+    "sequence": 20,
+    "sourceObject": 196,
+    "file": "img/pa-evidence/area-2-p17-020.webp",
+    "width": 1098,
+    "height": 1352,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 17,
+    "sequence": 21,
+    "sourceObject": 197,
+    "file": "img/pa-evidence/area-2-p17-021.webp",
+    "width": 1320,
+    "height": 880,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 17,
+    "sequence": 22,
+    "sourceObject": 198,
+    "file": "img/pa-evidence/area-2-p17-022.webp",
+    "width": 1342,
+    "height": 1306,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 17,
+    "sequence": 23,
+    "sourceObject": 199,
+    "file": "img/pa-evidence/area-2-p17-023.webp",
+    "width": 1086,
+    "height": 1462,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 24,
+    "sourceObject": 206,
+    "file": "img/pa-evidence/area-2-p18-024.webp",
+    "width": 663,
+    "height": 469,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 25,
+    "sourceObject": 207,
+    "file": "img/pa-evidence/area-2-p18-025.webp",
+    "width": 663,
+    "height": 468,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 26,
+    "sourceObject": 208,
+    "file": "img/pa-evidence/area-2-p18-026.webp",
+    "width": 480,
+    "height": 339,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 27,
+    "sourceObject": 209,
+    "file": "img/pa-evidence/area-2-p18-027.webp",
+    "width": 479,
+    "height": 338,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 28,
+    "sourceObject": 210,
+    "file": "img/pa-evidence/area-2-p18-028.webp",
+    "width": 482,
+    "height": 340,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 29,
+    "sourceObject": 211,
+    "file": "img/pa-evidence/area-2-p18-029.webp",
+    "width": 480,
+    "height": 339,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 30,
+    "sourceObject": 212,
+    "file": "img/pa-evidence/area-2-p18-030.webp",
+    "width": 477,
+    "height": 337,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 31,
+    "sourceObject": 213,
+    "file": "img/pa-evidence/area-2-p18-031.webp",
+    "width": 479,
+    "height": 338,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 18,
+    "sequence": 32,
+    "sourceObject": 214,
+    "file": "img/pa-evidence/area-2-p18-032.webp",
+    "width": 2934,
+    "height": 1646,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 19,
+    "sequence": 33,
+    "sourceObject": 218,
+    "file": "img/pa-evidence/area-2-p19-033.webp",
+    "width": 1234,
+    "height": 926,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 19,
+    "sequence": 34,
+    "sourceObject": 219,
+    "file": "img/pa-evidence/area-2-p19-034.webp",
+    "width": 2048,
+    "height": 1423,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 19,
+    "sequence": 35,
+    "sourceObject": 220,
+    "file": "img/pa-evidence/area-2-p19-035.webp",
+    "width": 2048,
+    "height": 1423,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 19,
+    "sequence": 36,
+    "sourceObject": 221,
+    "file": "img/pa-evidence/area-2-p19-036.webp",
+    "width": 2048,
+    "height": 1423,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 20,
+    "sequence": 37,
+    "sourceObject": 225,
+    "file": "img/pa-evidence/area-2-p20-037.webp",
+    "width": 805,
+    "height": 604,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 20,
+    "sequence": 38,
+    "sourceObject": 226,
+    "file": "img/pa-evidence/area-2-p20-038.webp",
+    "width": 827,
+    "height": 620,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 20,
+    "sequence": 39,
+    "sourceObject": 227,
+    "file": "img/pa-evidence/area-2-p20-039.webp",
+    "width": 976,
+    "height": 733,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 20,
+    "sequence": 40,
+    "sourceObject": 228,
+    "file": "img/pa-evidence/area-2-p20-040.webp",
+    "width": 1356,
+    "height": 1017,
+    "pdfRotation": 0
+  },
+  {
+    "area": 2,
+    "page": 20,
+    "sequence": 41,
+    "sourceObject": 229,
+    "file": "img/pa-evidence/area-2-p20-041.webp",
+    "width": 673,
+    "height": 897,
+    "pdfRotation": -90
+  },
+  {
+    "area": 3,
+    "page": 21,
+    "sequence": 1,
+    "sourceObject": 233,
+    "file": "img/pa-evidence/area-3-p21-001.webp",
+    "width": 796,
+    "height": 560,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 21,
+    "sequence": 2,
+    "sourceObject": 234,
+    "file": "img/pa-evidence/area-3-p21-002.webp",
+    "width": 798,
+    "height": 562,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 22,
+    "sequence": 3,
+    "sourceObject": 238,
+    "file": "img/pa-evidence/area-3-p22-003.webp",
+    "width": 527,
+    "height": 374,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 22,
+    "sequence": 4,
+    "sourceObject": 239,
+    "file": "img/pa-evidence/area-3-p22-004.webp",
+    "width": 525,
+    "height": 374,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 22,
+    "sequence": 5,
+    "sourceObject": 240,
+    "file": "img/pa-evidence/area-3-p22-005.webp",
+    "width": 531,
+    "height": 375,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 22,
+    "sequence": 6,
+    "sourceObject": 241,
+    "file": "img/pa-evidence/area-3-p22-006.webp",
+    "width": 1516,
+    "height": 1137,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 22,
+    "sequence": 7,
+    "sourceObject": 242,
+    "file": "img/pa-evidence/area-3-p22-007.webp",
+    "width": 731,
+    "height": 549,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 22,
+    "sequence": 8,
+    "sourceObject": 243,
+    "file": "img/pa-evidence/area-3-p22-008.webp",
+    "width": 906,
+    "height": 679,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 23,
+    "sequence": 9,
+    "sourceObject": 247,
+    "file": "img/pa-evidence/area-3-p23-009.webp",
+    "width": 777,
+    "height": 583,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 23,
+    "sequence": 10,
+    "sourceObject": 248,
+    "file": "img/pa-evidence/area-3-p23-010.webp",
+    "width": 765,
+    "height": 574,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 23,
+    "sequence": 11,
+    "sourceObject": 249,
+    "file": "img/pa-evidence/area-3-p23-011.webp",
+    "width": 2048,
+    "height": 1536,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 23,
+    "sequence": 12,
+    "sourceObject": 250,
+    "file": "img/pa-evidence/area-3-p23-012.webp",
+    "width": 769,
+    "height": 577,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 23,
+    "sequence": 13,
+    "sourceObject": 251,
+    "file": "img/pa-evidence/area-3-p23-013.webp",
+    "width": 766,
+    "height": 575,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 24,
+    "sequence": 14,
+    "sourceObject": 255,
+    "file": "img/pa-evidence/area-3-p24-014.webp",
+    "width": 1672,
+    "height": 941,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 24,
+    "sequence": 15,
+    "sourceObject": 256,
+    "file": "img/pa-evidence/area-3-p24-015.webp",
+    "width": 770,
+    "height": 578,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 24,
+    "sequence": 16,
+    "sourceObject": 257,
+    "file": "img/pa-evidence/area-3-p24-016.webp",
+    "width": 768,
+    "height": 576,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 24,
+    "sequence": 17,
+    "sourceObject": 258,
+    "file": "img/pa-evidence/area-3-p24-017.webp",
+    "width": 1569,
+    "height": 1177,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 25,
+    "sequence": 18,
+    "sourceObject": 263,
+    "file": "img/pa-evidence/area-3-p25-018.webp",
+    "width": 762,
+    "height": 572,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 25,
+    "sequence": 19,
+    "sourceObject": 264,
+    "file": "img/pa-evidence/area-3-p25-019.webp",
+    "width": 783,
+    "height": 587,
+    "pdfRotation": 180
+  },
+  {
+    "area": 3,
+    "page": 25,
+    "sequence": 20,
+    "sourceObject": 265,
+    "file": "img/pa-evidence/area-3-p25-020.webp",
+    "width": 761,
+    "height": 571,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 25,
+    "sequence": 21,
+    "sourceObject": 266,
+    "file": "img/pa-evidence/area-3-p25-021.webp",
+    "width": 763,
+    "height": 572,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 25,
+    "sequence": 22,
+    "sourceObject": 267,
+    "file": "img/pa-evidence/area-3-p25-022.webp",
+    "width": 1395,
+    "height": 1046,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 26,
+    "sequence": 23,
+    "sourceObject": 271,
+    "file": "img/pa-evidence/area-3-p26-023.webp",
+    "width": 554,
+    "height": 739,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 26,
+    "sequence": 24,
+    "sourceObject": 272,
+    "file": "img/pa-evidence/area-3-p26-024.webp",
+    "width": 815,
+    "height": 611,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 26,
+    "sequence": 25,
+    "sourceObject": 273,
+    "file": "img/pa-evidence/area-3-p26-025.webp",
+    "width": 718,
+    "height": 538,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 26,
+    "sequence": 26,
+    "sourceObject": 274,
+    "file": "img/pa-evidence/area-3-p26-026.webp",
+    "width": 986,
+    "height": 739,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 26,
+    "sequence": 27,
+    "sourceObject": 275,
+    "file": "img/pa-evidence/area-3-p26-027.webp",
+    "width": 1448,
+    "height": 1086,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 27,
+    "sequence": 28,
+    "sourceObject": 280,
+    "file": "img/pa-evidence/area-3-p27-028.webp",
+    "width": 1586,
+    "height": 1190,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 27,
+    "sequence": 29,
+    "sourceObject": 281,
+    "file": "img/pa-evidence/area-3-p27-029.webp",
+    "width": 702,
+    "height": 494,
+    "pdfRotation": 90
+  },
+  {
+    "area": 3,
+    "page": 27,
+    "sequence": 30,
+    "sourceObject": 282,
+    "file": "img/pa-evidence/area-3-p27-030.webp",
+    "width": 711,
+    "height": 503,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 27,
+    "sequence": 31,
+    "sourceObject": 283,
+    "file": "img/pa-evidence/area-3-p27-031.webp",
+    "width": 674,
+    "height": 636,
+    "pdfRotation": 0,
+    "displayOverride": "img/school-emblem-transparent.png",
+    "overrideReason": "User-requested replacement 2026-09-14"
+  },
+  {
+    "area": 3,
+    "page": 27,
+    "sequence": 32,
+    "sourceObject": 284,
+    "file": "img/pa-evidence/area-3-p27-032.webp",
+    "width": 851,
+    "height": 656,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 28,
+    "sequence": 33,
+    "sourceObject": 290,
+    "file": "img/pa-evidence/area-3-p28-033.webp",
+    "width": 593,
+    "height": 790,
+    "pdfRotation": -90
+  },
+  {
+    "area": 3,
+    "page": 28,
+    "sequence": 34,
+    "sourceObject": 291,
+    "file": "img/pa-evidence/area-3-p28-034.webp",
+    "width": 705,
+    "height": 691,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 28,
+    "sequence": 35,
+    "sourceObject": 292,
+    "file": "img/pa-evidence/area-3-p28-035.webp",
+    "width": 425,
+    "height": 463,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 28,
+    "sequence": 36,
+    "sourceObject": 293,
+    "file": "img/pa-evidence/area-3-p28-036.webp",
+    "width": 958,
+    "height": 533,
+    "pdfRotation": 0
+  },
+  {
+    "area": 3,
+    "page": 28,
+    "sequence": 37,
+    "sourceObject": 283,
+    "file": "img/pa-evidence/area-3-p28-037.webp",
+    "width": 674,
+    "height": 636,
+    "pdfRotation": 0,
+    "displayOverride": "img/school-emblem-transparent.png",
+    "overrideReason": "User-requested replacement 2026-09-14"
+  },
+  {
+    "area": 3,
+    "page": 28,
+    "sequence": 38,
+    "sourceObject": 294,
+    "file": "img/pa-evidence/area-3-p28-038.webp",
+    "width": 1489,
+    "height": 993,
+    "pdfRotation": 0
+  }
+]

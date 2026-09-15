@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="th"><head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ครูไหมจี้ · Performance Agreement 2569</title>
+<meta name="description" content="แบบรายงานการประเมินการพัฒนางานตามข้อตกลง (PA) สำหรับข้าราชการครูและบุคลากรทางการศึกษา ตำแหน่ง ครู — นางสาวเวธกา จันทร์ศรีสุคต โรงเรียนโคกคอนวิทยาคม ปีงบประมาณ 2569">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%230a84ff'/%3E%3Cstop offset='.5' stop-color='%23bf5af2'/%3E%3Cstop offset='1' stop-color='%23ff9f0a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='42' font-family='-apple-system,Helvetica,Arial' font-size='28' font-weight='700' text-anchor='middle' fill='url(%23g)'%3EPA%3C/text%3E%3C/svg%3E">
+</head>
+<body><canvas id="mathBackground" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#profile">ข้ามไปยังเนื้อหา</a>
+<div class="gate" id="gate" role="region" aria-label="เพลงประกอบ">
+  <div class="gate__inner"><p>ยินดีต้อนรับสู่พื้นที่การเรียนรู้ของครูไหมจี้</p>
+    <div class="gate__actions"><button class="btn btn--white" id="enter" type="button">เปิดเพลงประกอบ</button><button class="btn btn--ghost" id="enterQuiet" type="button">ชมแบบเงียบ</button></div>
+  </div>
+</div>
+<!-- ===== Nav ===== -->
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="nav__brand" href="#top">ครูไหมจี้ <span> / PA 2569</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" type="button">เมนู <span aria-hidden="true">＋</span></button><nav id="mainNav" aria-label="เมนูหลัก">
+      <ul class="nav__links">
+        <li><a href="#profile">ข้อมูลทั่วไป</a></li>
+        <li><a href="#story">ผลการปฏิบัติงาน</a></li>
+        <li><a href="#evidence">หลักฐาน</a></li>
+        <li><a href="#ai">AI Ready</a></li>
+        <li><a href="#challenge">ประเด็นท้าทาย</a></li>
+        <li><a href="#awards">รางวัล</a></li>
+      </ul>
+    </nav>
+    <button class="music" id="music" type="button" aria-pressed="false" aria-label="เปิด/ปิดเพลงประกอบ">
+      <span class="music__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="music__label">เปิดเพลง</span>
+    </button>
+  </div>
+</header>
+
+<audio id="soundtrack" src="audio/background-music.mp3" loop="" preload="metadata"></audio><span id="musicStatus" class="sr-only" role="status"></span>
+
+<main>
+
+<!-- ===== Hero: video cover ===== -->
+<section class="hero" aria-label="หน้าปก">
+  <video class="hero__video" autoplay="" muted="" loop="" playsinline="" preload="metadata" poster="video/poster.jpg">
+    <source src="video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero__scrim" aria-hidden="true"></div><img class="hero__emblem" src="img/school-emblem-transparent.png" alt="ตราโรงเรียนโคกคอนวิทยาคม" width="300" height="240">
+  <div class="hero__top">
+    <div class="wrap" style="width:min(1400px,100% - 48px)">
+      <p class="hero__kicker in">แบบรายงานการประเมินการพัฒนางานตามข้อตกลง · 1 ตุลาคม 2568 – 30 กันยายน 2569</p>
+      <p class="hero__edition in">PERFORMANCE AGREEMENT · 2569</p><h1 class="hero__title in">ครูไหมจี้</h1>
+      <p class="hero__th in">การประเมินการพัฒนางานตามข้อตกลง (PA)<br><span>สำหรับข้าราชการครูและบุคลากรทางการศึกษา ตำแหน่ง ครู</span></p>
+    </div>
+  </div>
+  <div class="hero__bottom">
+    <div class="wrap">
+      <div class="hero__meta in">
+        <div class="hero__name">นางสาวเวธกา จันทร์ศรีสุคต<small>ครู กลุ่มสาระการเรียนรู้คณิตศาสตร์ · โรงเรียนโคกคอนวิทยาคม สพม.หนองคาย</small></div>
+        <div class="hero__actions">
+          <a class="btn btn--white" href="#story">ดูผลการปฏิบัติงาน</a>
+          <a class="btn btn--ghost" href="#challenge" style="color:#fff">ประเด็นท้าทาย</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="video-controls"><button id="videoToggle" type="button" aria-pressed="false">หยุดวิดีโอ</button><button id="videoSound" type="button" aria-pressed="false">ฟังคำต้อนรับ</button></div><p class="hero__scroll" aria-hidden="true"><span>เลื่อนลง</span><i></i></p>
+</section>
+
+<!-- ===== Intro statement ===== -->
+<section class="intro">
+  <div class="narrow center">
+    <p class="eyebrow reveal">ปีงบประมาณ 2569</p>
+    <h2 class="headline reveal" data-delay="1">ข้อตกลงหนึ่งปี<br>ที่วัดได้จริงในห้องเรียน</h2>
+    <p class="lead muted reveal" data-delay="2" style="margin-top:22px">รายงานผลการปฏิบัติงานตามมาตรฐานตำแหน่งครู 3 ด้าน และข้อตกลงพัฒนางานที่เป็นประเด็นท้าทาย เพื่อยกระดับผลลัพธ์การเรียนรู้ของผู้เรียนด้วยเทคโนโลยีและการเรียนรู้เชิงรุก</p>
+  </div>
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><div class="stat__num"><span data-count="19">0</span><small>ชม./สัปดาห์</small></div><p>ภาระงานสอนคณิตศาสตร์ ม.2 – ม.6 และกิจกรรมพัฒนาผู้เรียน</p></div>
+      <div class="stat"><div class="stat__num"><span data-count="3">0</span><small>ด้าน</small></div><p>การจัดการเรียนรู้ · การส่งเสริมสนับสนุน · การพัฒนาตนเองและวิชาชีพ</p></div>
+      <div class="stat"><div class="stat__num"><span data-count="15">0</span><small>รายการ</small></div><p>รางวัล เกียรติบัตร และหลักสูตรอบรมที่ผ่านในปีงบประมาณนี้</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Profile ===== -->
+<section class="chapter chapter--gray" id="profile">
+  <div class="wrap">
+    <div class="profile">
+      <div class="card3d reveal" id="card3d">
+        <div class="card3d__inner">
+          <img src="img/profile-maijee.png" alt="นางสาวเวธกา จันทร์ศรีสุคต" width="1024" height="1536" fetchpriority="high" style="background:linear-gradient(180deg,#e9edf3,#cfd6e0)">
+          <div class="card3d__glare" aria-hidden="true"></div>
+          <div class="card3d__label"><strong>นางสาวเวธกา จันทร์ศรีสุคต</strong><span>ครู · โรงเรียนโคกคอนวิทยาคม</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow reveal">ข้อมูลทั่วไป</p>
+        <h2 class="headline--md reveal" data-delay="1">ผู้ขอรับการประเมิน</h2>
+        <dl class="facts reveal" data-delay="2" style="margin-top:28px">
+          <dt>ชื่อ–สกุล</dt><dd><strong>นางสาวเวธกา จันทร์ศรีสุคต</strong></dd>
+          
+          <dt>คุณวุฒิ</dt><dd>ศึกษาศาสตรบัณฑิต (ศษ.บ.) สาขาคณิตศาสตรศึกษา</dd>
+          <dt>เริ่มรับราชการ</dt><dd>25 กันยายน 2566 ตำแหน่งครูผู้ช่วย</dd>
+          <dt>ปัจจุบัน</dt><dd>ตำแหน่ง ครู</dd>
+          <dt>สถานศึกษา</dt><dd>โรงเรียนโคกคอนวิทยาคม อำเภอท่าบ่อ จังหวัดหนองคาย<br>สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาหนองคาย</dd>
+          
+          
+          <dt>วินัย / การลา</dt><dd>ไม่เคยถูกลงโทษทางวินัย · ลาป่วย 1 ครั้ง (1 วัน) · ไม่มาสาย</dd>
+        </dl>
+        <div class="pills reveal" data-delay="2">
+          <span class="pill">ครูที่ปรึกษา ม.5/1</span>
+          <span class="pill">หัวหน้ากลุ่มสาระฯ คณิตศาสตร์</span>
+          <span class="pill">หัวหน้าเจ้าหน้าที่พัสดุ</span>
+          <span class="pill">ครูเวรวันอังคาร</span>
+          <span class="pill">ผู้รับผิดชอบ PISA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:96px">
+      <h2 class="headline--md">ภาระงานสอน</h2>
+      <p class="lead muted" style="margin-top:10px;font-size:19px">รวม 19 ชั่วโมงต่อสัปดาห์ ทั้งสองภาคเรียน</p>
+      <div class="tabs" role="tablist" aria-label="เลือกภาคเรียน">
+        <button class="tab" role="tab" aria-selected="true" aria-controls="t1" id="tab1" type="button">ภาคเรียนที่ 2 / 2568</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="t2" id="tab2" type="button">ภาคเรียนที่ 1 / 2569</button>
+      </div>
+      <div class="table-wrap" id="t1" role="tabpanel" aria-labelledby="tab1">
+        <table class="tt">
+          <thead><tr><th>รหัสวิชา</th><th>รายวิชา</th><th>ระดับชั้น</th><th class="num">ห้อง</th><th class="num">ชั่วโมง/สัปดาห์</th></tr></thead>
+          <tbody>
+            <tr><td>ค22102</td><td>คณิตศาสตร์ 4</td><td>ม.2</td><td class="num">2</td><td class="num">6</td></tr>
+            <tr><td>ค31202</td><td>คณิตศาสตร์เพิ่มเติม 2</td><td>ม.4/1</td><td class="num">1</td><td class="num">3</td></tr>
+            <tr><td>ค22102</td><td>คณิตศาสตร์พื้นฐาน 4</td><td>ม.5</td><td class="num">2</td><td class="num">4</td></tr>
+            <tr><td>ค33202</td><td>คณิตศาสตร์เพิ่มเติม 6</td><td>ม.6</td><td class="num">3</td><td class="num">3</td></tr>
+            <tr><td>—</td><td>ลูกเสือ/เนตรนารี</td><td>ม.1–3</td><td class="num">1</td><td class="num">1</td></tr>
+            <tr><td>—</td><td>วิถีพุทธ</td><td>ม.2</td><td class="num">1</td><td class="num">1</td></tr>
+            <tr><td>—</td><td>ชุมนุม</td><td>ม.1–6</td><td class="num">1</td><td class="num">1</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="4">รวม</td><td class="num">19 ชั่วโมง</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="table-wrap" id="t2" role="tabpanel" aria-labelledby="tab2" hidden="">
+        <table class="tt">
+          <thead><tr><th>รหัสวิชา</th><th>รายวิชา</th><th>ระดับชั้น</th><th class="num">ห้อง</th><th class="num">ชั่วโมง/สัปดาห์</th></tr></thead>
+          <tbody>
+            <tr><td>ค22101</td><td>คณิตศาสตร์ 4</td><td>ม.2</td><td class="num">2</td><td class="num">6</td></tr>
+            <tr><td>ค31201</td><td>คณิตศาสตร์เพิ่มเติม 2</td><td>ม.4/1</td><td class="num">1</td><td class="num">3</td></tr>
+            <tr><td>ค22101</td><td>คณิตศาสตร์พื้นฐาน 4</td><td>ม.5</td><td class="num">2</td><td class="num">4</td></tr>
+            <tr><td>ค33201</td><td>คณิตศาสตร์เพิ่มเติม 6</td><td>ม.6</td><td class="num">3</td><td class="num">3</td></tr>
+            <tr><td>—</td><td>ลูกเสือ/เนตรนารี</td><td>ม.1–3</td><td class="num">1</td><td class="num">1</td></tr>
+            <tr><td>—</td><td>วิถีพุทธ</td><td>ม.2</td><td class="num">1</td><td class="num">1</td></tr>
+            <tr><td>—</td><td>ชุมนุม</td><td>ม.1–6</td><td class="num">1</td><td class="num">1</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="4">รวม</td><td class="num">19 ชั่วโมง</td></tr></tfoot>
+        </table>
+      </div>
+
+      <h2 class="headline--md" style="margin-top:80px">หน้าที่รับผิดชอบอื่นในโรงเรียน</h2>
+      <ul class="duties">
+        <li>ครูที่ปรึกษา<small>ชั้นมัธยมศึกษาปีที่ 5/1</small></li>
+        <li>หัวหน้ากลุ่มสาระการเรียนรู้<small>คณิตศาสตร์</small></li>
+        <li>หัวหน้าเจ้าหน้าที่พัสดุ<small>งานบริหารทั่วไป</small></li>
+        <li>ครูเวรประจำวัน<small>วันอังคาร</small></li>
+        <li>ผู้รับผิดชอบ PISA<small>ขับเคลื่อนการยกระดับผู้เรียนตามแนวทางประเมินนานาชาติ</small></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Scrollytelling: 3 domains ===== -->
+<section class="chapter chapter--dark" id="story">
+  <div class="wrap">
+    <p class="eyebrow reveal">ส่วนที่ 1 · ผลการปฏิบัติงาน</p>
+    <h2 class="headline reveal" data-delay="1">สามด้าน หนึ่งเป้าหมาย<br><span class="grad">ผู้เรียนเปลี่ยนแปลงในทางที่ดีขึ้น</span></h2>
+    <p class="lead muted reveal" data-delay="2" style="margin-top:22px;max-width:36em">เลื่อนเพื่อดูการปฏิบัติงานตามมาตรฐานตำแหน่งครูทีละด้าน พร้อมผลการดำเนินงานที่เกิดขึ้นจริงในปีงบประมาณ 2569</p>
+
+    <nav class="evidence-jump" aria-label="เลือกด้านของหลักฐาน" id="evidence"><a href="#evidence-area-1">ด้านที่ 1 · 64 ภาพ</a><a href="#evidence-area-2">ด้านที่ 2 · 41 ภาพ</a><a href="#evidence-area-3">ด้านที่ 3 · 38 ภาพ</a></nav>
+  <section class="pa-domain" aria-label="ด้านที่ 1"><article class="step is-active" data-step="1" data-cap="ปฏิบัติการสอนคณิตศาสตร์ด้วยสื่อดิจิทัลและกิจกรรม Active Learning" id="pa-area-1">
+          <p class="step__num">ด้านที่ 1</p>
+          <h3>การจัดการเรียนรู้</h3>
+          <p class="lead">ออกแบบการเรียนรู้แบบ 5E ร่วมกับ Active Learning ประยุกต์ข้อสอบ PISA และบูรณาการ Soft Power ท้องถิ่นเข้ากับคณิตศาสตร์</p>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.1 นำผลการวิเคราะห์หลักสูตรมาจัดทำรายวิชาและหน่วยการเรียนรู้</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.2 ปฏิบัติการสอนโดยออกแบบการจัดการเรียนรู้</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.3 จัดกิจกรรมการเรียนรู้</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.4 วัดและประเมินผลการเรียนรู้</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.5 จัดบรรยากาศที่ส่งเสริมและพัฒนาผู้เรียน</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.6 เลือกและใช้สื่อ เทคโนโลยี และแหล่งเรียนรู้</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.7 จัดบรรยากาศที่ส่งเสริมและพัฒนาผู้เรียน</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>1.8 อบรมและพัฒนาคุณลักษณะที่ดีของผู้เรียน</span></li></ul>
+          <div class="results">
+            <h4>ผลการดำเนินงาน</h4>
+            <ol>
+              <li>นำผลการวิเคราะห์หลักสูตรมาจัดทำรายวิชาและหน่วยการเรียนรู้ในรายวิชาที่สอน</li>
+              <li>จัดกิจกรรมการเรียนรู้แบบ 5E ร่วมกับ Active Learning</li>
+              <li>เข้าร่วมโครงการ IFTE พัฒนานวัตกรรมร่วมกับ Soft Power ของท้องถิ่น</li>
+              <li>ปลูกฝังคุณลักษณะ 5 ประการของโรงเรียนสุจริตผ่านการเรียนการสอน</li>
+              <li>นำข้อสอบ PISA มาประยุกต์ใช้ในคาบเรียนคณิตศาสตร์</li>
+            </ol>
+          </div>
+        <a class="evidence-link" href="#evidence-area-1">ดูภาพประกอบด้านที่ 1 ทั้งหมด →</a></article><section class="evidence-area" id="evidence-area-1"><div class="evidence__head"><div><p class="eyebrow">ด้านที่ 1</p><h3>การจัดการเรียนรู้</h3></div><span class="muted">64 ภาพ · แตะเพื่อขยาย</span></div><div class="evidence-mosaic" data-gallery="">
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ แลกเปลี่ยนเรียนรู้ร่วมกัน ภาพที่ 1 ด้านที่ 1"><img src="img/pa-evidence/area-1-p04-001.webp" alt="แลกเปลี่ยนเรียนรู้ร่วมกัน — ภาพที่ 1 จากหน้า 4" width="1542" height="867" loading="lazy" decoding="async"></button><figcaption><span>แลกเปลี่ยนเรียนรู้ร่วมกัน</span><small>หน้า 4 · ภาพ 01</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 2 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-002.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 2 จากหน้า 5" width="759" height="570" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 02</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 3 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-003.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 3 จากหน้า 5" width="754" height="566" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 03</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 4 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-004.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 4 จากหน้า 5" width="755" height="566" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 04</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 5 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-005.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 5 จากหน้า 5" width="760" height="571" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 05</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 6 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-006.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 6 จากหน้า 5" width="760" height="571" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 06</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 7 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-007.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 7 จากหน้า 5" width="757" height="568" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 07</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การใช้สื่อดิจิทัลในห้องเรียน ภาพที่ 8 ด้านที่ 1"><img src="img/pa-evidence/area-1-p05-008.webp" alt="การใช้สื่อดิจิทัลในห้องเรียน — ภาพที่ 8 จากหน้า 5" width="1536" height="1024" loading="lazy" decoding="async"></button><figcaption><span>การใช้สื่อดิจิทัลในห้องเรียน</span><small>หน้า 5 · ภาพ 08</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมการจัดการเรียนรู้ ภาพที่ 9 ด้านที่ 1"><img src="img/pa-evidence/area-1-p06-009.webp" alt="กิจกรรมการจัดการเรียนรู้ — ภาพที่ 9 จากหน้า 6" width="764" height="573" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมการจัดการเรียนรู้</span><small>หน้า 6 · ภาพ 09</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ กิจกรรมการจัดการเรียนรู้ ภาพที่ 10 ด้านที่ 1"><img src="img/pa-evidence/area-1-p06-010.webp" alt="กิจกรรมการจัดการเรียนรู้ — ภาพที่ 10 จากหน้า 6" width="764" height="573" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมการจัดการเรียนรู้</span><small>หน้า 6 · ภาพ 10</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมการจัดการเรียนรู้ ภาพที่ 11 ด้านที่ 1"><img src="img/pa-evidence/area-1-p06-011.webp" alt="กิจกรรมการจัดการเรียนรู้ — ภาพที่ 11 จากหน้า 6" width="760" height="571" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมการจัดการเรียนรู้</span><small>หน้า 6 · ภาพ 11</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมการจัดการเรียนรู้ ภาพที่ 12 ด้านที่ 1"><img src="img/pa-evidence/area-1-p06-012.webp" alt="กิจกรรมการจัดการเรียนรู้ — ภาพที่ 12 จากหน้า 6" width="756" height="567" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมการจัดการเรียนรู้</span><small>หน้า 6 · ภาพ 12</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมการจัดการเรียนรู้ ภาพที่ 13 ด้านที่ 1"><img src="img/pa-evidence/area-1-p06-013.webp" alt="กิจกรรมการจัดการเรียนรู้ — ภาพที่ 13 จากหน้า 6" width="1607" height="1204" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมการจัดการเรียนรู้</span><small>หน้า 6 · ภาพ 13</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 14 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-014.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 14 จากหน้า 7" width="765" height="574" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 14</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 15 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-015.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 15 จากหน้า 7" width="765" height="574" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 15</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 16 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-016.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 16 จากหน้า 7" width="748" height="562" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 16</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 17 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-017.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 17 จากหน้า 7" width="756" height="567" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 17</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 18 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-018.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 18 จากหน้า 7" width="748" height="562" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 18</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 19 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-019.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 19 จากหน้า 7" width="756" height="567" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 19</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 20 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-020.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 20 จากหน้า 7" width="770" height="578" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 20</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 21 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-021.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 21 จากหน้า 7" width="789" height="591" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 21</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ บรรยากาศการเรียนรู้และการนำเสนอ ภาพที่ 22 ด้านที่ 1"><img src="img/pa-evidence/area-1-p08-022.webp" alt="บรรยากาศการเรียนรู้และการนำเสนอ — ภาพที่ 22 จากหน้า 8" width="750" height="563" loading="lazy" decoding="async"></button><figcaption><span>บรรยากาศการเรียนรู้และการนำเสนอ</span><small>หน้า 8 · ภาพ 22</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ บรรยากาศการเรียนรู้และการนำเสนอ ภาพที่ 23 ด้านที่ 1"><img src="img/pa-evidence/area-1-p08-023.webp" alt="บรรยากาศการเรียนรู้และการนำเสนอ — ภาพที่ 23 จากหน้า 8" width="760" height="571" loading="lazy" decoding="async"></button><figcaption><span>บรรยากาศการเรียนรู้และการนำเสนอ</span><small>หน้า 8 · ภาพ 23</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ บรรยากาศการเรียนรู้และการนำเสนอ ภาพที่ 24 ด้านที่ 1"><img src="img/pa-evidence/area-1-p08-024.webp" alt="บรรยากาศการเรียนรู้และการนำเสนอ — ภาพที่ 24 จากหน้า 8" width="759" height="570" loading="lazy" decoding="async"></button><figcaption><span>บรรยากาศการเรียนรู้และการนำเสนอ</span><small>หน้า 8 · ภาพ 24</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ บรรยากาศการเรียนรู้และการนำเสนอ ภาพที่ 25 ด้านที่ 1"><img src="img/pa-evidence/area-1-p08-025.webp" alt="บรรยากาศการเรียนรู้และการนำเสนอ — ภาพที่ 25 จากหน้า 8" width="752" height="564" loading="lazy" decoding="async"></button><figcaption><span>บรรยากาศการเรียนรู้และการนำเสนอ</span><small>หน้า 8 · ภาพ 25</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ บรรยากาศการเรียนรู้และการนำเสนอ ภาพที่ 26 ด้านที่ 1"><img src="img/pa-evidence/area-1-p08-026.webp" alt="บรรยากาศการเรียนรู้และการนำเสนอ — ภาพที่ 26 จากหน้า 8" width="1477" height="1108" loading="lazy" decoding="async"></button><figcaption><span>บรรยากาศการเรียนรู้และการนำเสนอ</span><small>หน้า 8 · ภาพ 26</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ บรรยากาศการเรียนรู้และการนำเสนอ ภาพที่ 27 ด้านที่ 1"><img src="img/pa-evidence/area-1-p08-027.webp" alt="บรรยากาศการเรียนรู้และการนำเสนอ — ภาพที่ 27 จากหน้า 8" width="1024" height="1536" loading="lazy" decoding="async"></button><figcaption><span>บรรยากาศการเรียนรู้และการนำเสนอ</span><small>หน้า 8 · ภาพ 27</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 28 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-028.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 28 จากหน้า 9" width="704" height="528" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 28</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 29 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-029.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 29 จากหน้า 9" width="710" height="532" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 29</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 30 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-030.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 30 จากหน้า 9" width="676" height="507" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 30</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 31 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-031.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 31 จากหน้า 9" width="711" height="533" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 31</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 32 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-032.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 32 จากหน้า 9" width="958" height="529" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 32</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 33 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-033.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 33 จากหน้า 9" width="971" height="533" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 33</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 34 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-034.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 34 จากหน้า 9" width="958" height="533" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 34</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมเกมคณิตศาสตร์ ภาพที่ 35 ด้านที่ 1"><img src="img/pa-evidence/area-1-p09-035.webp" alt="กิจกรรมเกมคณิตศาสตร์ — ภาพที่ 35 จากหน้า 9" width="916" height="507" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมเกมคณิตศาสตร์</span><small>หน้า 9 · ภาพ 35</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ ผู้เรียนลงมือปฏิบัติ ภาพที่ 36 ด้านที่ 1"><img src="img/pa-evidence/area-1-p10-036.webp" alt="ผู้เรียนลงมือปฏิบัติ — ภาพที่ 36 จากหน้า 10" width="795" height="596" loading="lazy" decoding="async"></button><figcaption><span>ผู้เรียนลงมือปฏิบัติ</span><small>หน้า 10 · ภาพ 36</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ ผู้เรียนลงมือปฏิบัติ ภาพที่ 37 ด้านที่ 1"><img src="img/pa-evidence/area-1-p10-037.webp" alt="ผู้เรียนลงมือปฏิบัติ — ภาพที่ 37 จากหน้า 10" width="795" height="596" loading="lazy" decoding="async"></button><figcaption><span>ผู้เรียนลงมือปฏิบัติ</span><small>หน้า 10 · ภาพ 37</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ ผู้เรียนลงมือปฏิบัติ ภาพที่ 38 ด้านที่ 1"><img src="img/pa-evidence/area-1-p10-038.webp" alt="ผู้เรียนลงมือปฏิบัติ — ภาพที่ 38 จากหน้า 10" width="796" height="597" loading="lazy" decoding="async"></button><figcaption><span>ผู้เรียนลงมือปฏิบัติ</span><small>หน้า 10 · ภาพ 38</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ ผู้เรียนลงมือปฏิบัติ ภาพที่ 39 ด้านที่ 1"><img src="img/pa-evidence/area-1-p10-039.webp" alt="ผู้เรียนลงมือปฏิบัติ — ภาพที่ 39 จากหน้า 10" width="775" height="581" loading="lazy" decoding="async"></button><figcaption><span>ผู้เรียนลงมือปฏิบัติ</span><small>หน้า 10 · ภาพ 39</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ ผู้เรียนลงมือปฏิบัติ ภาพที่ 40 ด้านที่ 1"><img src="img/pa-evidence/area-1-p10-040.webp" alt="ผู้เรียนลงมือปฏิบัติ — ภาพที่ 40 จากหน้า 10" width="1320" height="724" loading="lazy" decoding="async"></button><figcaption><span>ผู้เรียนลงมือปฏิบัติ</span><small>หน้า 10 · ภาพ 40</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 41 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-041.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 41 จากหน้า 11" width="768" height="576" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 41</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 42 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-042.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 42 จากหน้า 11" width="840" height="630" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 42</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 43 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-043.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 43 จากหน้า 11" width="862" height="647" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 43</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 44 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-044.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 44 จากหน้า 11" width="863" height="647" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 44</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 45 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-045.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 45 จากหน้า 11" width="784" height="450" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 45</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 46 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-046.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 46 จากหน้า 11" width="991" height="547" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 46</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 47 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-047.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 47 จากหน้า 11" width="801" height="454" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 47</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 48 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-048.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 48 จากหน้า 11" width="869" height="579" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 48</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 49 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-049.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 49 จากหน้า 12" width="787" height="591" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 49</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 50 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-050.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 50 จากหน้า 12" width="789" height="592" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 50</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 51 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-051.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 51 จากหน้า 12" width="788" height="591" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 51</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 52 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-052.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 52 จากหน้า 12" width="773" height="580" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 52</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 53 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-053.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 53 จากหน้า 12" width="789" height="592" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 53</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 54 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-054.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 54 จากหน้า 12" width="994" height="746" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 54</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 55 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-055.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 55 จากหน้า 12" width="853" height="639" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 55</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้และการประเมินในชั้นเรียน ภาพที่ 56 ด้านที่ 1"><img src="img/pa-evidence/area-1-p12-056.webp" alt="การเรียนรู้และการประเมินในชั้นเรียน — ภาพที่ 56 จากหน้า 12" width="741" height="686" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้และการประเมินในชั้นเรียน</span><small>หน้า 12 · ภาพ 56</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 57 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-057.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 57 จากหน้า 13" width="1000" height="1000" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 57</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 58 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-058.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 58 จากหน้า 13" width="1000" height="1000" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 58</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 59 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-059.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 59 จากหน้า 13" width="421" height="419" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 59</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 60 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-060.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 60 จากหน้า 13" width="850" height="637" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 60</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 61 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-061.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 61 จากหน้า 13" width="677" height="507" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 61</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 62 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-062.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 62 จากหน้า 13" width="825" height="619" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 62</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 63 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-063.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 63 จากหน้า 13" width="864" height="1221" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 63</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 64 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-064.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 64 จากหน้า 13" width="718" height="475" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 64</small></figcaption></figure>
+</div></section></section><section class="pa-domain" aria-label="ด้านที่ 2"><article class="step is-active" data-step="2" data-cap="ออกเยี่ยมบ้าน คัดกรอง และดูแลช่วยเหลือผู้เรียนรายบุคคล" id="pa-area-2">
+          <p class="step__num">ด้านที่ 2</p>
+          <h3>การส่งเสริมและสนับสนุนการจัดการเรียนรู้</h3>
+          <p class="lead">สารสนเทศผู้เรียนบนแพลตฟอร์มดิจิทัล ระบบดูแลช่วยเหลือที่ถึงบ้าน และการทำงานร่วมกับเครือข่ายวิชาการ</p>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>2.1 จัดทำข้อมูลสารสนเทศของผู้เรียนและรายวิชา</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>2.2 ดำเนินการตามระบบดูแลช่วยเหลือผู้เรียน</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>2.3 ร่วมปฏิบัติงานทางวิชาการและงานอื่น ๆ ของสถานศึกษา</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>2.4 ประสานความร่วมมือกับผู้ปกครองหรือผู้เกี่ยวข้อง</span></li>
+          </ul>
+          <div class="results">
+            <h4>ผลการดำเนินงาน</h4>
+            <ol>
+              <li>พัฒนาสื่อการเรียนรู้และใช้เทคโนโลยี Google Form, Quizizz, Kahoot, Google Site และ Padlet</li>
+              <li>ออกเยี่ยมบ้าน คัดกรองนักเรียน และรายงานผลประเมิน SDQ</li>
+              <li>ครูผู้ฝึกสอนนักเรียนประกวดภาพถ่ายและภาพยนตร์สั้นต่อต้านการทุจริต โครงการโรงเรียนสุจริต</li>
+              <li>ร่วมเสวนาแลกเปลี่ยนการส่งผลงาน OBEC Content Center สู่แพลตฟอร์ม NDPL</li>
+              <li>นำเสนอ Best Practice ครู ระดับเขตพื้นที่และระดับภูมิภาค</li>
+            </ol>
+          </div>
+        <a class="evidence-link" href="#evidence-area-2">ดูภาพประกอบด้านที่ 2 ทั้งหมด →</a></article><section class="evidence-area" id="evidence-area-2"><div class="evidence__head"><div><p class="eyebrow">ด้านที่ 2</p><h3>การส่งเสริมและสนับสนุนการจัดการเรียนรู้</h3></div><span class="muted">41 ภาพ · แตะเพื่อขยาย</span></div><div class="evidence-mosaic" data-gallery="">
+<figure class="evidence-tile portrait featured"><button type="button" aria-label="ขยายภาพ สื่อประกอบการเรียนรู้ ภาพที่ 1 ด้านที่ 2"><img src="img/pa-evidence/area-2-p14-001.webp" alt="สื่อประกอบการเรียนรู้ — ภาพที่ 1 จากหน้า 14" width="451" height="638" loading="lazy" decoding="async"></button><figcaption><span>สื่อประกอบการเรียนรู้</span><small>หน้า 14 · ภาพ 01</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ สื่อประกอบการเรียนรู้ ภาพที่ 2 ด้านที่ 2"><img src="img/pa-evidence/area-2-p14-002.webp" alt="สื่อประกอบการเรียนรู้ — ภาพที่ 2 จากหน้า 14" width="451" height="639" loading="lazy" decoding="async"></button><figcaption><span>สื่อประกอบการเรียนรู้</span><small>หน้า 14 · ภาพ 02</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ สื่อประกอบการเรียนรู้ ภาพที่ 3 ด้านที่ 2"><img src="img/pa-evidence/area-2-p14-003.webp" alt="สื่อประกอบการเรียนรู้ — ภาพที่ 3 จากหน้า 14" width="452" height="640" loading="lazy" decoding="async"></button><figcaption><span>สื่อประกอบการเรียนรู้</span><small>หน้า 14 · ภาพ 03</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ สื่อประกอบการเรียนรู้ ภาพที่ 4 ด้านที่ 2"><img src="img/pa-evidence/area-2-p14-004.webp" alt="สื่อประกอบการเรียนรู้ — ภาพที่ 4 จากหน้า 14" width="462" height="653" loading="lazy" decoding="async"></button><figcaption><span>สื่อประกอบการเรียนรู้</span><small>หน้า 14 · ภาพ 04</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ สื่อประกอบการเรียนรู้ ภาพที่ 5 ด้านที่ 2"><img src="img/pa-evidence/area-2-p14-005.webp" alt="สื่อประกอบการเรียนรู้ — ภาพที่ 5 จากหน้า 14" width="380" height="537" loading="lazy" decoding="async"></button><figcaption><span>สื่อประกอบการเรียนรู้</span><small>หน้า 14 · ภาพ 05</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ สื่อประกอบการเรียนรู้ ภาพที่ 6 ด้านที่ 2"><img src="img/pa-evidence/area-2-p14-006.webp" alt="สื่อประกอบการเรียนรู้ — ภาพที่ 6 จากหน้า 14" width="329" height="466" loading="lazy" decoding="async"></button><figcaption><span>สื่อประกอบการเรียนรู้</span><small>หน้า 14 · ภาพ 06</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 7 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-007.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 7 จากหน้า 15" width="1000" height="1000" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 07</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 8 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-008.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 8 จากหน้า 15" width="455" height="643" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 08</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 9 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-009.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 9 จากหน้า 15" width="456" height="645" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 09</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 10 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-010.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 10 จากหน้า 15" width="1077" height="606" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 10</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 11 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-011.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 11 จากหน้า 15" width="486" height="486" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 11</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 12 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-012.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 12 จากหน้า 15" width="530" height="530" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 12</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ แผนการสอนและคลังสื่อดิจิทัล ภาพที่ 13 ด้านที่ 2"><img src="img/pa-evidence/area-2-p15-013.webp" alt="แผนการสอนและคลังสื่อดิจิทัล — ภาพที่ 13 จากหน้า 15" width="1820" height="1108" loading="lazy" decoding="async"></button><figcaption><span>แผนการสอนและคลังสื่อดิจิทัล</span><small>หน้า 15 · ภาพ 13</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน ภาพที่ 14 ด้านที่ 2"><img src="img/pa-evidence/area-2-p16-014.webp" alt="การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน — ภาพที่ 14 จากหน้า 16" width="1035" height="582" loading="lazy" decoding="async"></button><figcaption><span>การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน</span><small>หน้า 16 · ภาพ 14</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน ภาพที่ 15 ด้านที่ 2"><img src="img/pa-evidence/area-2-p16-015.webp" alt="การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน — ภาพที่ 15 จากหน้า 16" width="829" height="622" loading="lazy" decoding="async"></button><figcaption><span>การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน</span><small>หน้า 16 · ภาพ 15</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน ภาพที่ 16 ด้านที่ 2"><img src="img/pa-evidence/area-2-p16-016.webp" alt="การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน — ภาพที่ 16 จากหน้า 16" width="738" height="553" loading="lazy" decoding="async"></button><figcaption><span>การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน</span><small>หน้า 16 · ภาพ 16</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน ภาพที่ 17 ด้านที่ 2"><img src="img/pa-evidence/area-2-p16-017.webp" alt="การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน — ภาพที่ 17 จากหน้า 16" width="842" height="631" loading="lazy" decoding="async"></button><figcaption><span>การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน</span><small>หน้า 16 · ภาพ 17</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน ภาพที่ 18 ด้านที่ 2"><img src="img/pa-evidence/area-2-p16-018.webp" alt="การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน — ภาพที่ 18 จากหน้า 16" width="643" height="910" loading="lazy" decoding="async"></button><figcaption><span>การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน</span><small>หน้า 16 · ภาพ 18</small></figcaption></figure>
+<figure class="evidence-tile portrait featured"><button type="button" aria-label="ขยายภาพ การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน ภาพที่ 19 ด้านที่ 2"><img src="img/pa-evidence/area-2-p16-019.webp" alt="การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน — ภาพที่ 19 จากหน้า 16" width="637" height="901" loading="lazy" decoding="async"></button><figcaption><span>การเยี่ยมบ้านและการดูแลช่วยเหลือผู้เรียน</span><small>หน้า 16 · ภาพ 19</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ ผลงานและสื่อดิจิทัลของผู้เรียน ภาพที่ 20 ด้านที่ 2"><img src="img/pa-evidence/area-2-p17-020.webp" alt="ผลงานและสื่อดิจิทัลของผู้เรียน — ภาพที่ 20 จากหน้า 17" width="1098" height="1352" loading="lazy" decoding="async"></button><figcaption><span>ผลงานและสื่อดิจิทัลของผู้เรียน</span><small>หน้า 17 · ภาพ 20</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ ผลงานและสื่อดิจิทัลของผู้เรียน ภาพที่ 21 ด้านที่ 2"><img src="img/pa-evidence/area-2-p17-021.webp" alt="ผลงานและสื่อดิจิทัลของผู้เรียน — ภาพที่ 21 จากหน้า 17" width="1320" height="880" loading="lazy" decoding="async"></button><figcaption><span>ผลงานและสื่อดิจิทัลของผู้เรียน</span><small>หน้า 17 · ภาพ 21</small></figcaption></figure><section class="student-padlets" aria-labelledby="padletHeading"><h3 id="padletHeading">พื้นที่เรียนรู้และส่งงานของนักเรียน</h3><p class="muted">กระดาน Padlet สำหรับทบทวนสิ่งที่เรียนรู้และรวบรวมผลงาน</p><div class="padlet-grid"><article class="padlet-card"><p class="eyebrow">Padlet</p><h4>สรุปสิ่งที่เรียนรู้ของนักเรียน</h4><div class="student-actions"><button type="button" class="btn btn--white padlet-load" data-board="derh355nf2q9os27" aria-expanded="false" aria-controls="board-derh355nf2q9os27">แสดงกระดานในหน้านี้</button><a href="https://padlet.com/maiwethaka89/padlet-derh355nf2q9os27" target="_blank" rel="noopener noreferrer">เปิด Padlet ↗</a></div><div id="board-derh355nf2q9os27" class="padlet-frame" hidden=""></div></article><article class="padlet-card"><p class="eyebrow">Padlet</p><h4>ส่งงานนักเรียนชั้น ม.5/2</h4><div class="student-actions"><button type="button" class="btn btn--white padlet-load" data-board="5562idknqafmtcrc" aria-expanded="false" aria-controls="board-5562idknqafmtcrc">แสดงกระดานในหน้านี้</button><a href="https://padlet.com/maiwethaka89/5-2-5562idknqafmtcrc" target="_blank" rel="noopener noreferrer">เปิด Padlet ↗</a></div><div id="board-5562idknqafmtcrc" class="padlet-frame" hidden=""></div></article></div></section>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ ผลงานและสื่อดิจิทัลของผู้เรียน ภาพที่ 22 ด้านที่ 2"><img src="img/pa-evidence/area-2-p17-022.webp" alt="ผลงานและสื่อดิจิทัลของผู้เรียน — ภาพที่ 22 จากหน้า 17" width="1342" height="1306" loading="lazy" decoding="async"></button><figcaption><span>ผลงานและสื่อดิจิทัลของผู้เรียน</span><small>หน้า 17 · ภาพ 22</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ ผลงานและสื่อดิจิทัลของผู้เรียน ภาพที่ 23 ด้านที่ 2"><img src="img/pa-evidence/area-2-p17-023.webp" alt="ผลงานและสื่อดิจิทัลของผู้เรียน — ภาพที่ 23 จากหน้า 17" width="1086" height="1462" loading="lazy" decoding="async"></button><figcaption><span>ผลงานและสื่อดิจิทัลของผู้เรียน</span><small>หน้า 17 · ภาพ 23</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 24 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-024.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 24 จากหน้า 18" width="663" height="469" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 24</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 25 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-025.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 25 จากหน้า 18" width="663" height="468" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 25</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 26 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-026.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 26 จากหน้า 18" width="480" height="339" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 26</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 27 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-027.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 27 จากหน้า 18" width="479" height="338" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 27</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 28 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-028.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 28 จากหน้า 18" width="482" height="340" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 28</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 29 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-029.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 29 จากหน้า 18" width="480" height="339" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 29</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 30 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-030.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 30 จากหน้า 18" width="477" height="337" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 30</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 31 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-031.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 31 จากหน้า 18" width="479" height="338" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 31</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานโครงการโรงเรียนสุจริต ภาพที่ 32 ด้านที่ 2"><img src="img/pa-evidence/area-2-p18-032.webp" alt="หลักฐานโครงการโรงเรียนสุจริต — ภาพที่ 32 จากหน้า 18" width="2934" height="1646" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานโครงการโรงเรียนสุจริต</span><small>หน้า 18 · ภาพ 32</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การแลกเปลี่ยนเรียนรู้กับเครือข่าย ภาพที่ 33 ด้านที่ 2"><img src="img/pa-evidence/area-2-p19-033.webp" alt="การแลกเปลี่ยนเรียนรู้กับเครือข่าย — ภาพที่ 33 จากหน้า 19" width="1234" height="926" loading="lazy" decoding="async"></button><figcaption><span>การแลกเปลี่ยนเรียนรู้กับเครือข่าย</span><small>หน้า 19 · ภาพ 33</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การแลกเปลี่ยนเรียนรู้กับเครือข่าย ภาพที่ 34 ด้านที่ 2"><img src="img/pa-evidence/area-2-p19-034.webp" alt="การแลกเปลี่ยนเรียนรู้กับเครือข่าย — ภาพที่ 34 จากหน้า 19" width="2048" height="1423" loading="lazy" decoding="async"></button><figcaption><span>การแลกเปลี่ยนเรียนรู้กับเครือข่าย</span><small>หน้า 19 · ภาพ 34</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การแลกเปลี่ยนเรียนรู้กับเครือข่าย ภาพที่ 35 ด้านที่ 2"><img src="img/pa-evidence/area-2-p19-035.webp" alt="การแลกเปลี่ยนเรียนรู้กับเครือข่าย — ภาพที่ 35 จากหน้า 19" width="2048" height="1423" loading="lazy" decoding="async"></button><figcaption><span>การแลกเปลี่ยนเรียนรู้กับเครือข่าย</span><small>หน้า 19 · ภาพ 35</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การแลกเปลี่ยนเรียนรู้กับเครือข่าย ภาพที่ 36 ด้านที่ 2"><img src="img/pa-evidence/area-2-p19-036.webp" alt="การแลกเปลี่ยนเรียนรู้กับเครือข่าย — ภาพที่ 36 จากหน้า 19" width="2048" height="1423" loading="lazy" decoding="async"></button><figcaption><span>การแลกเปลี่ยนเรียนรู้กับเครือข่าย</span><small>หน้า 19 · ภาพ 36</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ การนำเสนอผลงาน Best Practice ภาพที่ 37 ด้านที่ 2"><img src="img/pa-evidence/area-2-p20-037.webp" alt="การนำเสนอผลงาน Best Practice — ภาพที่ 37 จากหน้า 20" width="805" height="604" loading="lazy" decoding="async"></button><figcaption><span>การนำเสนอผลงาน Best Practice</span><small>หน้า 20 · ภาพ 37</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การนำเสนอผลงาน Best Practice ภาพที่ 38 ด้านที่ 2"><img src="img/pa-evidence/area-2-p20-038.webp" alt="การนำเสนอผลงาน Best Practice — ภาพที่ 38 จากหน้า 20" width="827" height="620" loading="lazy" decoding="async"></button><figcaption><span>การนำเสนอผลงาน Best Practice</span><small>หน้า 20 · ภาพ 38</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การนำเสนอผลงาน Best Practice ภาพที่ 39 ด้านที่ 2"><img src="img/pa-evidence/area-2-p20-039.webp" alt="การนำเสนอผลงาน Best Practice — ภาพที่ 39 จากหน้า 20" width="976" height="733" loading="lazy" decoding="async"></button><figcaption><span>การนำเสนอผลงาน Best Practice</span><small>หน้า 20 · ภาพ 39</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การนำเสนอผลงาน Best Practice ภาพที่ 40 ด้านที่ 2"><img src="img/pa-evidence/area-2-p20-040.webp" alt="การนำเสนอผลงาน Best Practice — ภาพที่ 40 จากหน้า 20" width="1356" height="1017" loading="lazy" decoding="async"></button><figcaption><span>การนำเสนอผลงาน Best Practice</span><small>หน้า 20 · ภาพ 40</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ การนำเสนอผลงาน Best Practice ภาพที่ 41 ด้านที่ 2"><img src="img/pa-evidence/area-2-p20-041.webp" alt="การนำเสนอผลงาน Best Practice — ภาพที่ 41 จากหน้า 20" width="673" height="897" loading="lazy" decoding="async"></button><figcaption><span>การนำเสนอผลงาน Best Practice</span><small>หน้า 20 · ภาพ 41</small></figcaption></figure>
+</div><section class="student-showcase" aria-labelledby="studentWorksHeading"><h3 id="studentWorksHeading">ผลงานนักเรียน</h3><p class="muted">เกม AR และวิดีโอผลงานของนักเรียน</p><article class="ar-project"><div><p class="eyebrow">ตัวอย่างผลงานนักเรียน</p><h4>เกม AR เลขยกกำลัง</h4><p>ผลงานเกมที่นักเรียนสร้าง เพื่อฝึกทักษะเรื่องเลขยกกำลัง</p><a class="btn btn--white" href="https://gemini.google.com/share/6635991f4b86?skid=187ffbb2-275f-46bf-a867-8b0be21ecefe" target="_blank" rel="noopener noreferrer">เปิดตัวอย่างเกมบน Gemini ↗</a></div><img src="img/pa-evidence/area-2-p17-022.webp" alt="ตัวอย่างผลงานเกมเลขยกกำลังของนักเรียน" loading="lazy"></article><div class="student-video-grid"><a class="student-video-link" href="https://vt.tiktok.com/ZSqQL6vuS/" target="_blank" rel="noopener noreferrer"><span class="student-play" aria-hidden="true">▷</span><span><span class="eyebrow">TikTok</span><strong>ผลงานนักเรียน 1</strong><span class="student-link-caption">ชมวิดีโอบน TikTok ↗</span></span></a><a class="student-video-link" href="https://vt.tiktok.com/ZSqQ8EbvS/" target="_blank" rel="noopener noreferrer"><span class="student-play" aria-hidden="true">▷</span><span><span class="eyebrow">TikTok</span><strong>ผลงานนักเรียน 2</strong><span class="student-link-caption">ชมวิดีโอบน TikTok ↗</span></span></a><a class="student-video-link" href="https://vt.tiktok.com/ZSqQLLgU2/" target="_blank" rel="noopener noreferrer"><span class="student-play" aria-hidden="true">▷</span><span><span class="eyebrow">TikTok</span><strong>ผลงานนักเรียน 3</strong><span class="student-link-caption">ชมวิดีโอบน TikTok ↗</span></span></a><a class="student-video-link" href="https://vt.tiktok.com/ZSqQLNTa8/" target="_blank" rel="noopener noreferrer"><span class="student-play" aria-hidden="true">▷</span><span><span class="eyebrow">TikTok</span><strong>ผลงานนักเรียน 4</strong><span class="student-link-caption">ชมวิดีโอบน TikTok ↗</span></span></a></div></section></section></section><section class="pa-domain" aria-label="ด้านที่ 3"><article class="step is-active" data-step="3" data-cap="โครงการ IFTE — STEM Education บูรณาการภูมิปัญญาท้องถิ่น" id="pa-area-3">
+          <p class="step__num">ด้านที่ 3</p>
+          <h3>การพัฒนาตนเองและวิชาชีพ</h3>
+          <p class="lead">พัฒนาตนเองอย่างเป็นระบบ แลกเปลี่ยนเรียนรู้ผ่าน PLC และนำสิ่งที่ได้กลับมาใช้จริงกับผู้เรียน</p>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>3.1 พัฒนาตนเองอย่างเป็นระบบและต่อเนื่อง</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>3.2 มีส่วนร่วมในการแลกเปลี่ยนเรียนรู้ทางวิชาชีพ</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M7 12.5l3.2 3.2L17 9"></path></svg><span>3.3 นำความรู้และทักษะที่ได้มาใช้ในการจัดการเรียนรู้</span></li>
+          </ul>
+          <div class="results">
+            <h4>ผลการดำเนินงาน</h4>
+            <ol>
+              <li>จัดทำแผนการจัดการเรียนรู้เชิงรุก (Active Learning) ทุกรายวิชา</li>
+              <li>อบรมด้านงบประมาณสถานศึกษาและระบบข้อมูลสินทรัพย์ OBEC Asset</li>
+              <li>แลกเปลี่ยนเรียนรู้โครงการ IFTE ร่วมกับโรงเรียนเครือข่าย</li>
+              <li>จัดกิจกรรม STEM ฐานสะพานไม้ไอศกรีมรับน้ำหนัก</li>
+              <li>ได้รับการยกย่องเชิดชูเกียรติ ประเภทครูผู้สอนดีเด่น</li>
+              <li>สร้างคลังสื่อดิจิทัลบน Google Site และผ่านหลักสูตรออนไลน์หลายหลักสูตร</li>
+            </ol>
+          </div>
+        <a class="evidence-link" href="#evidence-area-3">ดูภาพประกอบด้านที่ 3 ทั้งหมด →</a></article><section class="evidence-area" id="evidence-area-3"><div class="evidence__head"><div><p class="eyebrow">ด้านที่ 3</p><h3>การพัฒนาตนเองและวิชาชีพ</h3></div><span class="muted">38 ภาพ · แตะเพื่อขยาย</span></div><div class="evidence-mosaic" data-gallery="">
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ หลักฐานการพัฒนาตนเอง ภาพที่ 1 ด้านที่ 3"><img src="img/pa-evidence/area-3-p21-001.webp" alt="หลักฐานการพัฒนาตนเอง — ภาพที่ 1 จากหน้า 21" width="796" height="560" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานการพัฒนาตนเอง</span><small>หน้า 21 · ภาพ 01</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ หลักฐานการพัฒนาตนเอง ภาพที่ 2 ด้านที่ 3"><img src="img/pa-evidence/area-3-p21-002.webp" alt="หลักฐานการพัฒนาตนเอง — ภาพที่ 2 จากหน้า 21" width="798" height="562" loading="lazy" decoding="async"></button><figcaption><span>หลักฐานการพัฒนาตนเอง</span><small>หน้า 21 · ภาพ 02</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและกิจกรรม IFTE ภาพที่ 3 ด้านที่ 3"><img src="img/pa-evidence/area-3-p22-003.webp" alt="การอบรมและกิจกรรม IFTE — ภาพที่ 3 จากหน้า 22" width="527" height="374" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและกิจกรรม IFTE</span><small>หน้า 22 · ภาพ 03</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและกิจกรรม IFTE ภาพที่ 4 ด้านที่ 3"><img src="img/pa-evidence/area-3-p22-004.webp" alt="การอบรมและกิจกรรม IFTE — ภาพที่ 4 จากหน้า 22" width="525" height="374" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและกิจกรรม IFTE</span><small>หน้า 22 · ภาพ 04</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและกิจกรรม IFTE ภาพที่ 5 ด้านที่ 3"><img src="img/pa-evidence/area-3-p22-005.webp" alt="การอบรมและกิจกรรม IFTE — ภาพที่ 5 จากหน้า 22" width="531" height="375" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและกิจกรรม IFTE</span><small>หน้า 22 · ภาพ 05</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและกิจกรรม IFTE ภาพที่ 6 ด้านที่ 3"><img src="img/pa-evidence/area-3-p22-006.webp" alt="การอบรมและกิจกรรม IFTE — ภาพที่ 6 จากหน้า 22" width="1516" height="1137" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและกิจกรรม IFTE</span><small>หน้า 22 · ภาพ 06</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและกิจกรรม IFTE ภาพที่ 7 ด้านที่ 3"><img src="img/pa-evidence/area-3-p22-007.webp" alt="การอบรมและกิจกรรม IFTE — ภาพที่ 7 จากหน้า 22" width="731" height="549" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและกิจกรรม IFTE</span><small>หน้า 22 · ภาพ 07</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและกิจกรรม IFTE ภาพที่ 8 ด้านที่ 3"><img src="img/pa-evidence/area-3-p22-008.webp" alt="การอบรมและกิจกรรม IFTE — ภาพที่ 8 จากหน้า 22" width="906" height="679" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและกิจกรรม IFTE</span><small>หน้า 22 · ภาพ 08</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและแลกเปลี่ยนประสบการณ์ ภาพที่ 9 ด้านที่ 3"><img src="img/pa-evidence/area-3-p23-009.webp" alt="การอบรมและแลกเปลี่ยนประสบการณ์ — ภาพที่ 9 จากหน้า 23" width="777" height="583" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและแลกเปลี่ยนประสบการณ์</span><small>หน้า 23 · ภาพ 09</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ การอบรมและแลกเปลี่ยนประสบการณ์ ภาพที่ 10 ด้านที่ 3"><img src="img/pa-evidence/area-3-p23-010.webp" alt="การอบรมและแลกเปลี่ยนประสบการณ์ — ภาพที่ 10 จากหน้า 23" width="765" height="574" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและแลกเปลี่ยนประสบการณ์</span><small>หน้า 23 · ภาพ 10</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและแลกเปลี่ยนประสบการณ์ ภาพที่ 11 ด้านที่ 3"><img src="img/pa-evidence/area-3-p23-011.webp" alt="การอบรมและแลกเปลี่ยนประสบการณ์ — ภาพที่ 11 จากหน้า 23" width="2048" height="1536" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและแลกเปลี่ยนประสบการณ์</span><small>หน้า 23 · ภาพ 11</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและแลกเปลี่ยนประสบการณ์ ภาพที่ 12 ด้านที่ 3"><img src="img/pa-evidence/area-3-p23-012.webp" alt="การอบรมและแลกเปลี่ยนประสบการณ์ — ภาพที่ 12 จากหน้า 23" width="769" height="577" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและแลกเปลี่ยนประสบการณ์</span><small>หน้า 23 · ภาพ 12</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การอบรมและแลกเปลี่ยนประสบการณ์ ภาพที่ 13 ด้านที่ 3"><img src="img/pa-evidence/area-3-p23-013.webp" alt="การอบรมและแลกเปลี่ยนประสบการณ์ — ภาพที่ 13 จากหน้า 23" width="766" height="575" loading="lazy" decoding="async"></button><figcaption><span>การอบรมและแลกเปลี่ยนประสบการณ์</span><small>หน้า 23 · ภาพ 13</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ เครือข่ายการพัฒนานวัตกรรม ภาพที่ 14 ด้านที่ 3"><img src="img/pa-evidence/area-3-p24-014.webp" alt="เครือข่ายการพัฒนานวัตกรรม — ภาพที่ 14 จากหน้า 24" width="1672" height="941" loading="lazy" decoding="async"></button><figcaption><span>เครือข่ายการพัฒนานวัตกรรม</span><small>หน้า 24 · ภาพ 14</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ เครือข่ายการพัฒนานวัตกรรม ภาพที่ 15 ด้านที่ 3"><img src="img/pa-evidence/area-3-p24-015.webp" alt="เครือข่ายการพัฒนานวัตกรรม — ภาพที่ 15 จากหน้า 24" width="770" height="578" loading="lazy" decoding="async"></button><figcaption><span>เครือข่ายการพัฒนานวัตกรรม</span><small>หน้า 24 · ภาพ 15</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ เครือข่ายการพัฒนานวัตกรรม ภาพที่ 16 ด้านที่ 3"><img src="img/pa-evidence/area-3-p24-016.webp" alt="เครือข่ายการพัฒนานวัตกรรม — ภาพที่ 16 จากหน้า 24" width="768" height="576" loading="lazy" decoding="async"></button><figcaption><span>เครือข่ายการพัฒนานวัตกรรม</span><small>หน้า 24 · ภาพ 16</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ เครือข่ายการพัฒนานวัตกรรม ภาพที่ 17 ด้านที่ 3"><img src="img/pa-evidence/area-3-p24-017.webp" alt="เครือข่ายการพัฒนานวัตกรรม — ภาพที่ 17 จากหน้า 24" width="1569" height="1177" loading="lazy" decoding="async"></button><figcaption><span>เครือข่ายการพัฒนานวัตกรรม</span><small>หน้า 24 · ภาพ 17</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรม STEM Education ภาพที่ 18 ด้านที่ 3"><img src="img/pa-evidence/area-3-p25-018.webp" alt="กิจกรรม STEM Education — ภาพที่ 18 จากหน้า 25" width="762" height="572" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรม STEM Education</span><small>หน้า 25 · ภาพ 18</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ กิจกรรม STEM Education ภาพที่ 19 ด้านที่ 3"><img src="img/pa-evidence/area-3-p25-019.webp" alt="กิจกรรม STEM Education — ภาพที่ 19 จากหน้า 25" width="783" height="587" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรม STEM Education</span><small>หน้า 25 · ภาพ 19</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรม STEM Education ภาพที่ 20 ด้านที่ 3"><img src="img/pa-evidence/area-3-p25-020.webp" alt="กิจกรรม STEM Education — ภาพที่ 20 จากหน้า 25" width="761" height="571" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรม STEM Education</span><small>หน้า 25 · ภาพ 20</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรม STEM Education ภาพที่ 21 ด้านที่ 3"><img src="img/pa-evidence/area-3-p25-021.webp" alt="กิจกรรม STEM Education — ภาพที่ 21 จากหน้า 25" width="763" height="572" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรม STEM Education</span><small>หน้า 25 · ภาพ 21</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรม STEM Education ภาพที่ 22 ด้านที่ 3"><img src="img/pa-evidence/area-3-p25-022.webp" alt="กิจกรรม STEM Education — ภาพที่ 22 จากหน้า 25" width="1395" height="1046" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรม STEM Education</span><small>หน้า 25 · ภาพ 22</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ การพัฒนากิจกรรมและผลงาน ภาพที่ 23 ด้านที่ 3"><img src="img/pa-evidence/area-3-p26-023.webp" alt="การพัฒนากิจกรรมและผลงาน — ภาพที่ 23 จากหน้า 26" width="554" height="739" loading="lazy" decoding="async"></button><figcaption><span>การพัฒนากิจกรรมและผลงาน</span><small>หน้า 26 · ภาพ 23</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การพัฒนากิจกรรมและผลงาน ภาพที่ 24 ด้านที่ 3"><img src="img/pa-evidence/area-3-p26-024.webp" alt="การพัฒนากิจกรรมและผลงาน — ภาพที่ 24 จากหน้า 26" width="815" height="611" loading="lazy" decoding="async"></button><figcaption><span>การพัฒนากิจกรรมและผลงาน</span><small>หน้า 26 · ภาพ 24</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การพัฒนากิจกรรมและผลงาน ภาพที่ 25 ด้านที่ 3"><img src="img/pa-evidence/area-3-p26-025.webp" alt="การพัฒนากิจกรรมและผลงาน — ภาพที่ 25 จากหน้า 26" width="718" height="538" loading="lazy" decoding="async"></button><figcaption><span>การพัฒนากิจกรรมและผลงาน</span><small>หน้า 26 · ภาพ 25</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การพัฒนากิจกรรมและผลงาน ภาพที่ 26 ด้านที่ 3"><img src="img/pa-evidence/area-3-p26-026.webp" alt="การพัฒนากิจกรรมและผลงาน — ภาพที่ 26 จากหน้า 26" width="986" height="739" loading="lazy" decoding="async"></button><figcaption><span>การพัฒนากิจกรรมและผลงาน</span><small>หน้า 26 · ภาพ 26</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การพัฒนากิจกรรมและผลงาน ภาพที่ 27 ด้านที่ 3"><img src="img/pa-evidence/area-3-p26-027.webp" alt="การพัฒนากิจกรรมและผลงาน — ภาพที่ 27 จากหน้า 26" width="1448" height="1086" loading="lazy" decoding="async"></button><figcaption><span>การพัฒนากิจกรรมและผลงาน</span><small>หน้า 26 · ภาพ 27</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ รางวัลและการพัฒนาวิชาชีพ ภาพที่ 28 ด้านที่ 3"><img src="img/pa-evidence/area-3-p27-028.webp" alt="รางวัลและการพัฒนาวิชาชีพ — ภาพที่ 28 จากหน้า 27" width="1586" height="1190" loading="lazy" decoding="async"></button><figcaption><span>รางวัลและการพัฒนาวิชาชีพ</span><small>หน้า 27 · ภาพ 28</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ รางวัลและการพัฒนาวิชาชีพ ภาพที่ 29 ด้านที่ 3"><img src="img/pa-evidence/area-3-p27-029.webp" alt="รางวัลและการพัฒนาวิชาชีพ — ภาพที่ 29 จากหน้า 27" width="702" height="494" loading="lazy" decoding="async"></button><figcaption><span>รางวัลและการพัฒนาวิชาชีพ</span><small>หน้า 27 · ภาพ 29</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ รางวัลและการพัฒนาวิชาชีพ ภาพที่ 30 ด้านที่ 3"><img src="img/pa-evidence/area-3-p27-030.webp" alt="รางวัลและการพัฒนาวิชาชีพ — ภาพที่ 30 จากหน้า 27" width="711" height="503" loading="lazy" decoding="async"></button><figcaption><span>รางวัลและการพัฒนาวิชาชีพ</span><small>หน้า 27 · ภาพ 30</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ รางวัลและการพัฒนาวิชาชีพ ภาพที่ 31 ด้านที่ 3"><img src="img/school-emblem-transparent.png" alt="รางวัลและการพัฒนาวิชาชีพ — ภาพที่ 31 จากหน้า 27" width="1448" height="1086" loading="lazy" decoding="async"></button><figcaption><span>รางวัลและการพัฒนาวิชาชีพ</span><small>หน้า 27 · ภาพ 31</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ รางวัลและการพัฒนาวิชาชีพ ภาพที่ 32 ด้านที่ 3"><img src="img/pa-evidence/area-3-p27-032.webp" alt="รางวัลและการพัฒนาวิชาชีพ — ภาพที่ 32 จากหน้า 27" width="851" height="656" loading="lazy" decoding="async"></button><figcaption><span>รางวัลและการพัฒนาวิชาชีพ</span><small>หน้า 27 · ภาพ 32</small></figcaption></figure>
+<figure class="evidence-tile portrait"><button type="button" aria-label="ขยายภาพ การมีส่วนร่วมในกิจกรรมสถานศึกษา ภาพที่ 33 ด้านที่ 3"><img src="img/pa-evidence/area-3-p28-033.webp" alt="การมีส่วนร่วมในกิจกรรมสถานศึกษา — ภาพที่ 33 จากหน้า 28" width="593" height="790" loading="lazy" decoding="async"></button><figcaption><span>การมีส่วนร่วมในกิจกรรมสถานศึกษา</span><small>หน้า 28 · ภาพ 33</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การมีส่วนร่วมในกิจกรรมสถานศึกษา ภาพที่ 34 ด้านที่ 3"><img src="img/pa-evidence/area-3-p28-034.webp" alt="การมีส่วนร่วมในกิจกรรมสถานศึกษา — ภาพที่ 34 จากหน้า 28" width="705" height="691" loading="lazy" decoding="async"></button><figcaption><span>การมีส่วนร่วมในกิจกรรมสถานศึกษา</span><small>หน้า 28 · ภาพ 34</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การมีส่วนร่วมในกิจกรรมสถานศึกษา ภาพที่ 35 ด้านที่ 3"><img src="img/pa-evidence/area-3-p28-035.webp" alt="การมีส่วนร่วมในกิจกรรมสถานศึกษา — ภาพที่ 35 จากหน้า 28" width="425" height="463" loading="lazy" decoding="async"></button><figcaption><span>การมีส่วนร่วมในกิจกรรมสถานศึกษา</span><small>หน้า 28 · ภาพ 35</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การมีส่วนร่วมในกิจกรรมสถานศึกษา ภาพที่ 36 ด้านที่ 3"><img src="img/pa-evidence/area-3-p28-036.webp" alt="การมีส่วนร่วมในกิจกรรมสถานศึกษา — ภาพที่ 36 จากหน้า 28" width="958" height="533" loading="lazy" decoding="async"></button><figcaption><span>การมีส่วนร่วมในกิจกรรมสถานศึกษา</span><small>หน้า 28 · ภาพ 36</small></figcaption></figure>
+<figure class="evidence-tile landscape featured"><button type="button" aria-label="ขยายภาพ การมีส่วนร่วมในกิจกรรมสถานศึกษา ภาพที่ 37 ด้านที่ 3"><img src="img/school-emblem-transparent.png" alt="การมีส่วนร่วมในกิจกรรมสถานศึกษา — ภาพที่ 37 จากหน้า 28" width="1448" height="1086" loading="lazy" decoding="async"></button><figcaption><span>การมีส่วนร่วมในกิจกรรมสถานศึกษา</span><small>หน้า 28 · ภาพ 37</small></figcaption></figure>
+<figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การมีส่วนร่วมในกิจกรรมสถานศึกษา ภาพที่ 38 ด้านที่ 3"><img src="img/pa-evidence/area-3-p28-038.webp" alt="การมีส่วนร่วมในกิจกรรมสถานศึกษา — ภาพที่ 38 จากหน้า 28" width="1489" height="993" loading="lazy" decoding="async"></button><figcaption><span>การมีส่วนร่วมในกิจกรรมสถานศึกษา</span><small>หน้า 28 · ภาพ 38</small></figcaption></figure>
+</div></section></section></div>
+</section>
+
+<!-- ===== 3D spatial ring ===== -->
+<section class="chapter chapter--dark spatial" id="spatial" style="padding-top:0">
+  <div class="wrap center">
+    <h2 class="headline--md reveal">มองห้องเรียนรอบทิศ</h2>
+    <p class="lead muted reveal" data-delay="1" style="margin-top:12px">หมุนแกลเลอรีภาพการเรียนรู้ในมุมมองสามมิติ</p>
+  </div>
+  <div class="ring-stage" id="ringStage" aria-label="แกลเลอรีสามมิติ">
+    <div class="ring-floor" aria-hidden="true"></div>
+    <div class="ring" id="ring">
+      <figure><img src="img/teach-board-2.jpg" alt="ครูสอนหน้าชั้น" loading="lazy" draggable="false"><figcaption>สอนด้วยสื่อดิจิทัล</figcaption></figure>
+      <figure><img src="img/group-work.jpg" alt="นักเรียนทำงานกลุ่ม" loading="lazy" draggable="false"><figcaption>Active Learning</figcaption></figure>
+      <figure><img src="img/students-present.jpg" alt="นักเรียนนำเสนอ" loading="lazy" draggable="false"><figcaption>นำเสนอผลงาน</figcaption></figure>
+      <figure><img src="img/cards-play.jpg" alt="เกมคณิตศาสตร์" loading="lazy" draggable="false"><figcaption>เรียนรู้ผ่านเกม</figcaption></figure>
+      <figure><img src="img/two-students.jpg" alt="นักเรียน" loading="lazy" draggable="false"><figcaption>บรรยากาศชั้นเรียน</figcaption></figure>
+      <figure><img src="img/stem-bridge-5.jpg" alt="STEM สะพานไม้ไอศกรีม" loading="lazy" draggable="false"><figcaption>STEM Education</figcaption></figure>
+      <figure><img src="img/worksheet.jpg" alt="นักเรียนทำใบงาน" loading="lazy" draggable="false"><figcaption>ประเมินตามสภาพจริง</figcaption></figure>
+      <figure><img src="img/home-visit-2.jpg" alt="เยี่ยมบ้านนักเรียน" loading="lazy" draggable="false"><figcaption>เยี่ยมบ้านนักเรียน</figcaption></figure>
+      <figure><img src="img/best-practice-3.jpg" alt="รับเกียรติบัตร" loading="lazy" draggable="false"><figcaption>Best Practice</figcaption></figure>
+      <figure><img src="img/ifte-group.jpg" alt="PLC เครือข่าย" loading="lazy" draggable="false"><figcaption>PLC เครือข่าย</figcaption></figure>
+    </div>
+  </div>
+  <div class="ring-controls"><button id="ringPrev" type="button" aria-label="หมุนแกลเลอรีไปทางซ้าย">←</button><button id="ringPause" type="button" aria-pressed="false">หยุดหมุน</button><button id="ringNext" type="button" aria-label="หมุนแกลเลอรีไปทางขวา">→</button></div><p class="ring-hint">ลากเพื่อหมุน หรือใช้ปุ่มลูกศร</p>
+</section>
+
+<!-- ===== Evidence galleries from the complete PDF ===== -->
+
+<!-- ===== AI readiness ===== -->
+<section class="chapter chapter--dark chapter--ai" id="ai">
+  <div class="ai-orb" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="narrow center">
+      <p class="eyebrow reveal">เตรียมความพร้อมด้าน AI และเทคโนโลยีอัจฉริยะ</p>
+      <h2 class="headline reveal" data-delay="1">ห้องเรียนคณิตศาสตร์<br><span class="grad">ที่ฉลาดขึ้นทุกคาบ</span></h2>
+      <p class="lead muted reveal" data-delay="2" style="margin-top:22px">นำเครื่องมือดิจิทัล AI และเทคโนโลยี AR/VR มาช่วยให้ผู้เรียนมองเห็นคณิตศาสตร์ที่เป็นนามธรรมได้อย่างเป็นรูปธรรม พร้อมประเมินผลได้ทันทีระหว่างเรียน</p>
+    </div>
+
+    <div class="ai-grid">
+      <article class="ai-card reveal"><img src="img/google-site.jpg" alt="คลังสื่อดิจิทัลบน Google Site" loading="lazy" class="contain"><div class="ai-card__body"><span class="ai-card__tag">ห้องเรียน AI</span><h3>เผยแพร่สื่อห้องเรียน AI สาระคณิตศาสตร์</h3><p>ร่วมเผยแพร่ผลงานการสร้างสื่อและนวัตกรรมการจัดการเรียนรู้ด้วยห้องเรียน AI และสร้างคลังสื่อดิจิทัลบน Google Site</p></div></article>
+      <article class="ai-card reveal" data-delay="1"><img src="img/cards-play-2.jpg" alt="เกม AR เลขยกกำลัง" loading="lazy"><div class="ai-card__body"><span class="ai-card__tag">AR</span><h3>โปรเจกต์เกม AR เลขยกกำลัง</h3><p>นักเรียนสร้างเกม Augmented Reality เพื่อฝึกเลขยกกำลัง — เรียนรู้ผ่านการสร้าง ไม่ใช่แค่การจำ</p></div></article>
+      <article class="ai-card reveal" data-delay="2"><img src="img/poster-3d.jpg" alt="สื่อคณิตศาสตร์สามมิติ" loading="lazy"><div class="ai-card__body"><span class="ai-card__tag">VR / 3D</span><h3>FrameVR.io และสื่อสามมิติ</h3><p>วิดีโอการจัดการเรียนการสอนบน FrameVR.io และสื่อคณิตศาสตร์สามมิติ ให้ผู้เรียนสำรวจรูปทรงในมิติความลึก</p></div></article>
+      <article class="ai-card reveal"><img src="img/quiz.jpg" alt="แบบทดสอบออนไลน์" loading="lazy" class="contain"><div class="ai-card__body"><span class="ai-card__tag">Formative</span><h3>Quizizz · Kahoot · Wordwall</h3><p>ประเมินผลระหว่างเรียนแบบทันที เห็นข้อมูลรายบุคคลเพื่อปรับการสอนในคาบถัดไป</p></div></article>
+      <article class="ai-card reveal" data-delay="1"><img src="img/padlet-wall.jpg" alt="Padlet ผลงานนักเรียน" loading="lazy" class="contain"><div class="ai-card__body"><span class="ai-card__tag">Collaboration</span><h3>Padlet และ Google Form</h3><p>พื้นที่ส่งงานและสะท้อนคิดร่วมกันของนักเรียน พร้อมสารสนเทศรายวิชาที่ครูติดตามได้ตลอดเวลา</p></div></article>
+      <article class="ai-card reveal" data-delay="2"><img src="img/smart-classroom.jpg" alt="Teacher Smart Classroom" loading="lazy"><div class="ai-card__body"><span class="ai-card__tag">Smart Classroom</span><h3>Teacher Smart Classroom Page</h3><p>หน้าสารสนเทศรายวิชาสำหรับผู้เรียนและผู้ปกครอง เข้าถึงสื่อ แผน และงานได้จากทุกอุปกรณ์</p></div></article>
+    </div>
+
+    <div class="privacy-note reveal"><p class="eyebrow">แนวทางเตรียมความพร้อม · AI อย่างรับผิดชอบ</p><h3>เทคโนโลยีที่คำนึงถึงผู้เรียน</h3><p>ตรวจสอบคำตอบที่ AI สร้างก่อนใช้สอน ไม่ป้อนชื่อ ผลการเรียน หรือข้อมูลส่วนตัวของนักเรียนลงในบริการสาธารณะ และให้ครูเป็นผู้ตัดสินใจด้านการเรียนรู้เสมอ</p></div><div class="ai-quote">
+      <blockquote>“ให้เทคโนโลยีทำงานเบื้องหลัง เพื่อให้ผู้เรียนได้คิด ลงมือทำ และมองเห็นคณิตศาสตร์ในชีวิตจริง”</blockquote>
+      <ul>
+        <li>GeoGebra / Desmos สร้างภาพกราฟิกของลำดับและอนุกรม</li>
+        <li>เครื่องคำนวณวิทยาศาสตร์ช่วยสำรวจแนวโน้มและตรวจสอบคำตอบ</li>
+        <li>Canva สำหรับนำเสนอชิ้นงาน 3 มิติของผู้เรียน</li>
+        <li>OBEC Content Center → แพลตฟอร์มการเรียนรู้ NDPL</li>
+      </ul>
+    </div>
+    <article class="smart-classroom-link">
+      <div><p class="eyebrow">ห้องเรียนออนไลน์</p><h3>Teacher Smart Classroom Page ครูไหมจี้</h3><p>เข้าสู่เว็บไซต์ห้องเรียนของครูไหมจี้</p></div>
+      <a class="btn btn--white" href="https://oakpakawat-pa.my.canva.site/smartteacherclassroommaijie" target="_blank" rel="noopener noreferrer">เปิดเว็บไซต์ห้องเรียน ↗</a>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Challenge ===== -->
+<section class="chapter" id="challenge">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="eyebrow reveal">ส่วนที่ 2 · ข้อตกลงในการพัฒนางานที่เป็นประเด็นท้าทาย</p>
+      <h2 class="headline reveal" data-delay="1">ยกผลสัมฤทธิ์ เรื่อง<br><span class="grad">ลำดับและอนุกรม</span></h2>
+      <p class="lead muted reveal" data-delay="2" style="margin-top:22px">ของนักเรียนชั้นมัธยมศึกษาปีที่ 6 โรงเรียนโคกคอนวิทยาคม ด้วยการจัดการเรียนรู้เชิงรุก (Active Learning) ร่วมกับกระบวนการออกแบบเชิงวิศวกรรม (Engineering Design Process) และการบูรณาการบริบทท้องถิ่น — ลวดลายผ้าขาวม้า</p>
+    </div>
+
+    <figure class="challenge-video"><video id="challengeVideo" controls="" playsinline="" preload="metadata" poster="video/challenge-poster.jpg"><source src="video/challenge-presentation.mp4" type="video/mp4"></video><figcaption>วิดีโอประกอบประเด็นท้าทาย</figcaption></figure><div class="challenge__grid">
+      <div>
+        <h3 class="headline--md reveal" style="font-size:clamp(26px,3vw,36px)">สภาพปัญหาของผู้เรียน</h3>
+        <div class="prose reveal" data-delay="1" style="margin-top:18px">
+          <p>ที่ผ่านมาผู้เรียนส่วนใหญ่มีผลสัมฤทธิ์ในเรื่องลำดับและอนุกรมต่ำกว่าเกณฑ์ เพราะเนื้อหามีความเป็นนามธรรมสูง เต็มไปด้วยสูตรและสัญลักษณ์ ผู้เรียนจึงมักท่องจำสูตรไปสอบโดยไม่เข้าใจที่มา และเชื่อมโยงไปสู่การแก้ปัญหาในชีวิตจริงไม่ได้ ส่งผลให้ขาดแรงจูงใจและมองว่าคณิตศาสตร์ยากและน่าเบื่อ</p>
+          <p>ผู้สอนจึงปรับประยุกต์จากการบรรยายมาสู่การเรียนรู้เชิงรุก โดยใช้กระบวนการออกแบบเชิงวิศวกรรม (EDP) ร่วมกับบริบทวัฒนธรรมและ Soft Power ท้องถิ่น เช่น ลวดลายผ้าขาวม้า ให้ผู้เรียนมองเห็น “ลำดับ” ที่จับต้องได้ในลายทอ และใช้เครื่องคำนวณวิทยาศาสตร์กับเทคโนโลยีดิจิทัลช่วยสำรวจและคำนวณ</p>
+        </div>
+
+        <h3 class="headline--md reveal" style="font-size:clamp(26px,3vw,36px);margin-top:56px">วิธีดำเนินการให้บรรลุผล</h3>
+        <ol class="steps reveal" data-delay="1">
+          <li><div><h4>ศึกษาและวิเคราะห์หลักสูตร</h4><p>ศึกษาหลักสูตรแกนกลาง ตัวชี้วัด และผลการเรียนรู้ที่คาดหวัง เรื่องลำดับและอนุกรม ม.6 เพื่อออกแบบหน่วยการเรียนรู้</p></div></li>
+          <li><div><h4>ออกแบบกิจกรรมแบบปรับประยุกต์</h4><p>แผน Active Learning ที่บูรณาการ EDP ใช้ “ลวดลายผ้าขาวม้า” เป็นสถานการณ์ปัญหา ให้ผู้เรียนถอดรหัสความสัมพันธ์ของลำดับจากลายผ้าและออกแบบลวดลายใหม่ด้วยหลักคณิตศาสตร์</p></div></li>
+          <li><div><h4>สร้างและพัฒนาสื่อเทคโนโลยี</h4><p>เครื่องคำนวณวิทยาศาสตร์สำรวจแนวโน้มของลำดับ, GeoGebra/Desmos สร้างภาพกราฟิก, Canva นำเสนอชิ้นงาน และ Quizizz / Wordwall / Padlet ประเมินระหว่างเรียน</p></div></li>
+          <li><div><h4>จัดการเรียนรู้และกระบวนการ PLC</h4><p>นำแผนไปใช้จริงกับนักเรียน ม.6 บันทึกผล และแลกเปลี่ยนในชุมชนการเรียนรู้ทางวิชาชีพของกลุ่มสาระคณิตศาสตร์ เพื่อปรับปรุงสื่อให้มีประสิทธิภาพยิ่งขึ้น</p></div></li>
+          <li><div><h4>วัดและประเมินผล</h4><p>ประเมินตามสภาพจริง ทั้งทักษะคณิตศาสตร์ ทักษะการแก้ปัญหา และการสร้างสรรค์ชิ้นงานด้วย Rubric Score</p></div></li>
+        </ol>
+      </div>
+
+      <div class="challenge-evidence" data-gallery=""><p class="eyebrow">ภาพประกอบจากด้านที่ 1</p><figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ การเรียนรู้เชิงรุกและการทำงานกลุ่ม ภาพที่ 14 ด้านที่ 1"><img src="img/pa-evidence/area-1-p07-014.webp" alt="การเรียนรู้เชิงรุกและการทำงานกลุ่ม — ภาพที่ 14 จากหน้า 7" width="765" height="574" loading="lazy" decoding="async"></button><figcaption><span>การเรียนรู้เชิงรุกและการทำงานกลุ่ม</span><small>หน้า 7 · ภาพ 14</small></figcaption></figure><figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ กิจกรรมและชิ้นงานของผู้เรียน ภาพที่ 43 ด้านที่ 1"><img src="img/pa-evidence/area-1-p11-043.webp" alt="กิจกรรมและชิ้นงานของผู้เรียน — ภาพที่ 43 จากหน้า 11" width="862" height="647" loading="lazy" decoding="async"></button><figcaption><span>กิจกรรมและชิ้นงานของผู้เรียน</span><small>หน้า 11 · ภาพ 43</small></figcaption></figure><figure class="evidence-tile landscape"><button type="button" aria-label="ขยายภาพ สื่อและหลักฐานการเรียนรู้ ภาพที่ 62 ด้านที่ 1"><img src="img/pa-evidence/area-1-p13-062.webp" alt="สื่อและหลักฐานการเรียนรู้ — ภาพที่ 62 จากหน้า 13" width="825" height="619" loading="lazy" decoding="async"></button><figcaption><span>สื่อและหลักฐานการเรียนรู้</span><small>หน้า 13 · ภาพ 62</small></figcaption></figure></div>
+    </div>
+
+    <div style="margin-top:96px">
+      <h3 class="headline--md reveal" style="font-size:clamp(26px,3vw,36px)">ผลลัพธ์การพัฒนาที่คาดหวัง</h3>
+      <div class="targets reveal" data-delay="1">
+        <div class="target"><div class="target__num"><span data-count="75">0</span><sup>%</sup></div><p>ของนักเรียน ม.6 มีผลสัมฤทธิ์เรื่องลำดับและอนุกรมผ่านเกณฑ์ที่สถานศึกษากำหนด</p></div>
+        <div class="target"><div class="target__num"><span data-count="80">0</span><sup>%</sup></div><p>มีคะแนนชิ้นงาน/ภาระงานการออกแบบและแก้ปัญหา ตั้งแต่ระดับดีขึ้นไป</p></div>
+        <div class="target"><div class="target__num"><span data-count="80">0</span><sup>%</sup></div><p>พึงพอใจต่อการเรียนรู้เชิงรุกและสื่อเทคโนโลยีที่ใช้ ในระดับมากขึ้นไป</p></div>
+      </div>
+      <div class="quali reveal" data-delay="2">
+        <div>เข้าใจกระบวนการทางคณิตศาสตร์เรื่องลำดับและอนุกรม และมองเห็นความเชื่อมโยงกับชีวิตประจำวันและบริบทชุมชนอย่างเป็นรูปธรรม</div>
+        <div>ได้พัฒนาทักษะศตวรรษที่ 21 — การแก้ปัญหา การคิดวิเคราะห์ผ่าน EDP และการใช้เทคโนโลยีสารสนเทศ</div>
+        <div>มีเจตคติที่ดีต่อคณิตศาสตร์ มองว่าเป็นเรื่องใกล้ตัว จับต้องได้ และนำไปสร้างสรรค์นวัตกรรมของตนเองได้</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Awards ===== -->
+<section class="chapter chapter--gray" id="awards">
+  <div class="wrap">
+    <p class="eyebrow reveal">รายงานการเข้ารับการอบรม / พัฒนาตนเอง</p>
+    <h2 class="headline reveal" data-delay="1">รางวัลและการพัฒนาตนเอง</h2>
+    <p class="lead muted reveal" data-delay="2" style="margin-top:14px;max-width:34em">กลุ่มสาระการเรียนรู้คณิตศาสตร์ · ปีงบประมาณ 2569</p>
+    <ol class="awards-list reveal">
+      <li><div>ถอดบทเรียน Best Practice ครู โครงการโรงเรียนสุจริต ระดับภูมิภาค<small>3 กรกฎาคม 2569 · ภาคตะวันออกเฉียงเหนือตอนบน</small></div><span class="lvl hi">ระดับคุณภาพ ดีเยี่ยม</span></li>
+      <li><div>ถอดบทเรียน Best Practice สำหรับครู<small>23 มิถุนายน 2569</small></div><span class="lvl hi">ชนะเลิศ ระดับดีเยี่ยม</span></li>
+      <li><div>กิจกรรมภาพถ่ายต่อต้านการทุจริต<small>23 มิถุนายน 2569</small></div><span class="lvl">รองชนะเลิศอันดับ 2 ระดับดีเยี่ยม</span></li>
+      <li><div>กิจกรรมภาพยนตร์สั้นต่อต้านการทุจริต<small>23 มิถุนายน 2569</small></div><span class="lvl">ระดับดีมาก</span></li>
+      <li><div>ครูที่ปรึกษาผลงานประกวดคลิปวิดีโอ “Sufficiency Living in a Changing World”<small>9 มิถุนายน 2569</small></div><span class="lvl">คุณภาพระดับ ดี</span></li>
+      <li><div>หลักสูตรต้านทุจริตศึกษา “ครอบครัวรุ่นใหม่ไม่ทนคอร์รัปชันและสินบน”<small>11 สิงหาคม 2569</small></div><span class="lvl">ผ่านการเรียนและทดสอบ</span></li>
+      <li><div>ผู้ขับเคลื่อนนวัตกรรมการชี้แนะเชิงรุกเพื่อยกระดับระบบแนะแนวและคุณลักษณะอันพึงประสงค์ของผู้เรียน<small>20 สิงหาคม 2569</small></div><span class="lvl hi">ระดับคุณภาพ ยอดเยี่ยม</span></li>
+      <li><div>โครงการส่งเสริมประสิทธิภาพผู้ปฏิบัติงานด้านงบประมาณของสถานศึกษา<small>24 กรกฎาคม 2569</small></div><span class="lvl">ผู้เข้ารับการอบรม</span></li>
+      <li><div>เผยแพร่ผลงานสื่อและนวัตกรรมการจัดการเรียนรู้ด้วยห้องเรียน AI สาระคณิตศาสตร์<small>5 มิถุนายน 2569</small></div><span class="lvl">ผู้ร่วมเผยแพร่ผลงาน</span></li>
+      <li><div>หลักสูตรวิชาแนะแนวเพื่อการค้นหาตัวเองและออกแบบทางเลือก Module 1<small>8 กรกฎาคม 2569</small></div><span class="lvl">สำเร็จการเรียน</span></li>
+      <li><div>การพัฒนาจรรยาบรรณวิชาชีพด้วยบทเรียนและบอร์ดเกมจรรยาบรรณ (E-PLC)<small>22 กรกฎาคม 2569</small></div><span class="lvl">ผ่านการพัฒนา</span></li>
+      <li><div>หลักสูตรต้านทุจริตศึกษา “รายวิชาเพิ่มเติม การป้องกันการทุจริต” ระดับ ม.5<small>10 สิงหาคม 2569</small></div><span class="lvl">ผ่านการเรียนและทดสอบ</span></li>
+      <li><div>ครูดี มีคุณภาพ มุ่งมั่นพัฒนาผลสัมฤทธิ์ (คะแนน O-NET ม.3 คณิตศาสตร์ สูงขึ้น)<small>16 มิถุนายน 2569</small></div><span class="lvl hi">ยกย่องเกียรติประวัติ</span></li>
+      <li><div>ครูผู้ฝึกสอน การคัดลายมือ วันภาษาไทยแห่งชาติ 2569<small>6 มิถุนายน 2569</small></div><span class="lvl">ระดับเหรียญทอง</span></li>
+      <li><div>ครูผู้ฝึกสอน การแต่งคำประพันธ์ วันภาษาไทยแห่งชาติ 2569<small>6 มิถุนายน 2569</small></div><span class="lvl">ระดับเหรียญทองแดง</span></li>
+    </ol>
+
+    <div class="gallery" data-gallery="" style="margin-top:56px">
+      <figure class="w3 contain"><button type="button"><img src="img/cert-obec-cc.jpg" alt="เกียรติบัตร OBEC Content Center" loading="lazy"></button><figcaption>OBEC Content Center</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/cert-guidance.jpg" alt="เกียรติบัตรระบบแนะแนว" loading="lazy"></button><figcaption>นวัตกรรมการชี้แนะเชิงรุก</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/cert-eplc.jpg" alt="เกียรติบัตร E-PLC" loading="lazy"></button><figcaption>E-PLC จรรยาบรรณวิชาชีพ</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/cert-sufficiency.jpg" alt="เกียรติบัตร Sufficiency Living" loading="lazy"></button><figcaption>Sufficiency Living in a Changing World</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/cert-hub.jpg" alt="เกียรติบัตร Teacher Hub" loading="lazy"></button><figcaption>Teacher Hub</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/cert-anticorruption-2.jpg" alt="เกียรติบัตรหลักสูตรต้านทุจริตศึกษา" loading="lazy"></button><figcaption>หลักสูตรต้านทุจริตศึกษา</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/cert-ifte.jpg" alt="เกียรติบัตร IFTE" loading="lazy"></button><figcaption>IFTE</figcaption></figure>
+      <figure class="w3 contain"><button type="button"><img src="img/school-emblem-transparent.png" alt="ตราโรงเรียนโคกคอนวิทยาคม" loading="lazy"></button><figcaption>โรงเรียนโคกคอนวิทยาคม</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Closing ===== -->
+<section class="chapter chapter--dark closing" id="closing">
+  <div class="wrap">
+    <h2 class="reveal"><span class="grad">ข้อตกลงในการพัฒนางาน</span></h2>
+    <p class="lead muted reveal" data-delay="1">รวบรวมผลการปฏิบัติงานและหลักฐานประกอบตามรายงาน PA เพื่อให้คณะกรรมการพิจารณาการพัฒนางานและผลลัพธ์การเรียนรู้ของผู้เรียน</p>
+    <div class="signs reveal" data-delay="2">
+      <div class="sign"><strong>นางสาวเวธกา จันทร์ศรีสุคต</strong><span>ตำแหน่ง ครู · ผู้จัดทำข้อตกลงในการพัฒนางาน</span></div>
+      <div class="sign"><strong>นางเพชรา พิมพ์ศรี</strong><span>ผู้อำนวยการโรงเรียนโคกคอนวิทยาคม · ผู้พิจารณาข้อตกลง</span></div>
+    </div>
+    <p class="reveal" style="margin-top:48px"><a class="btn btn--white" href="#top">กลับขึ้นด้านบน</a></p>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap">
+    <span>โรงเรียนโคกคอนวิทยาคม · สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาหนองคาย</span>
+    <span>Performance Agreement · ปีงบประมาณ 2569</span>
+  </div>
+</footer>
+
+</main>
+
+<dialog id="welcomeVideoDialog" class="welcome-video-dialog" aria-labelledby="welcomeVideoTitle"><div class="welcome-video-heading"><h2 id="welcomeVideoTitle">ยินดีต้อนรับสู่เว็บไซต์ครูไหมจี้</h2><button id="closeWelcomeVideo" type="button" aria-label="ปิดวิดีโอต้อนรับ">×</button></div><video id="welcomeVideo" controls="" autoplay="" playsinline="" preload="auto" poster="video/challenge-poster.jpg" loop=""><source src="video/challenge-presentation.mp4" type="video/mp4"></video><div class="welcome-video-footer"><span>ชมวิดีโอนี้อีกครั้งได้ที่ประเด็นท้าทาย</span><button id="welcomeVideoSound" type="button" aria-pressed="false">เปิดเสียงวิดีโอ</button></div></dialog>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="ดูภาพขยาย" hidden="">
+  <button class="lightbox__close" id="lbClose" type="button" aria-label="ปิด">×</button>
+  <button class="lightbox__nav prev" id="lbPrev" type="button" aria-label="ภาพก่อนหน้า">‹</button>
+  <figure style="margin:0"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lightbox__nav next" id="lbNext" type="button" aria-label="ภาพถัดไป">›</button>
+</div>
+
+<!-- Magic wand and falling stars -->
+<div class="cursor" id="cursor" aria-hidden="true"><svg viewBox="0 0 40 64" fill="none"><defs><linearGradient id="wandGold" gradientUnits="userSpaceOnUse" x1="4" y1="0" x2="26" y2="55"><stop stop-color="#fff6cc"></stop><stop offset=".5" stop-color="#e7b851"></stop><stop offset="1" stop-color="#ad70cf"></stop></linearGradient></defs><path d="M18 24L18 59" stroke="url(#wandGold)" stroke-width="6" stroke-linecap="round"></path><path d="m18 1 4.6 10 10.9 1.3-8 7.5 2.3 10.7L18 25l-9.8 5.5 2.3-10.7-8-7.5L13.4 11Z" fill="url(#wandGold)" stroke="#fff3c5" stroke-width="1.2"></path></svg></div>
+<canvas id="dust" aria-hidden="true"></canvas>
+
+<script src="js/main.js" defer=""></script>
+<script src="js/math-background.js" defer=""></script>
+
+
+<button type="button" id="mathMotion" class="math-motion" aria-pressed="false">หยุดพื้นหลัง</button>
+<script src="js/student-work.js" defer=""></script></body></html>
